@@ -1,0 +1,188 @@
+ {% load static %}
+
+
+<div class="footer style-two pt-80 bg-icon">
+  <div class="footer-sec">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+
+            <!-- Newsletter Section Start !-->
+            <div class="subscribe-area subscribeSS ">
+              <div class="subscribe-inner-area">
+                <div class="content-wrapper">
+                  <h2 class="subscribe-title text-white">Newsletter</h2>
+                  <p class="text">Join our newsletter to stay up to date on consulting experience</p>
+                </div>
+                <div class="subscribe-form-wrapper">
+                  <div class="subscribe-form-widget">
+                    <form action="#" id="mail" name="mail" method="POST">
+                      {% csrf_token %}
+                  
+                      <div class="mc4wp-form-fields">
+                        <div class="single-field">
+                          <input type="hidden" value="mail" />
+                          <input type="email" name="email" placeholder="Enter your email " />
+                        </div>
+                        <button class="submit-btn" type="submit">Subscribe</button>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Newsletter Section End !-->
+          </div></div></div></div></div>
+
+<!-- Footer start -->
+<footer class=" footer style-1 bg-gray">
+    <div class="footer-sec">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            {% comment %} <!-- Newsletter Section Start !-->
+            <div class="subscribe-area">
+              <div class="subscribe-inner-area">
+                <div class="content-wrapper">
+                  <h2 class="subscribe-title">Newsletter</h2>
+                  <p class="text text-black">Join our newsletter to stay up to date on consulting experience</p>
+                </div>
+                <div class="subscribe-form-wrapper">
+                  <div class="subscribe-form-widget">
+                    <form action="#" id="formemail" method="POST">
+                      {% csrf_token %}
+                      <div class="mc4wp-form-fields">
+                        <div class="single-field">
+                          <input type="hidden" class="" name="formhidden" value="formemail" />
+                          <input type="email" class="btn border " placeholder="Enter your email " />
+                        </div>
+                        <button class="submit-btn" type="submit" value="signup">Subscribe</button>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Newsletter Section End !--> {% endcomment %}
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-3 col-md-6">
+            <div class="footer-widget mb-30">
+              <div class="footer-widget-info">
+                <div class="footer-logo">
+                  <a href="index-2.html"><img src="{% static 'images/logo/footer_logo.png' %}" alt="Footer Logo" /></a>
+                </div>
+                <p class="">Consaltip is a glorem ipsum dolor sit amet consectetur. There are Aliquet pulvinar sit hendrerit convallis sapien mauris.</p>
+                <div class="social-widget">
+                  <a href="https://www.facebook.com/"><i class="icon-facebook"></i></a>
+                  <a href="https://twitter.com/"><i class="icon-twitter"></i></a>
+                  <a href="https://linkedin.com/"><i class="icon-linkedin"></i></a>
+                  <a href="https://pinterest.com/"><i class="icon-pinterest"></i></a>
+  
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="footer-widget mb-30">
+              <h2 class="footer-widget-title">Useful Link</h2>
+              <div class="footer-widget-menu">
+                <ul>
+                  <li><a href="{% url 'about' %}">Profile Our Company</a></li>
+                  <li><a href="{% url 'service' %}">Our Best Awards</a></li>
+                  <li><a href="{% url 'blog' %}">Our Updates</a></li>
+                  <li><a href="{% url 'gallery' %}">Our Gallery</a></li>
+                  <li><a href="{% url 'contact' %}">Contact with Us</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="footer-widget mb-30">
+              <h2 class="footer-widget-title">Help me</h2>
+              <div class="footer-widget-menu">
+                <ul>
+                  <li><a href="service-details.html">Privacy Policy</a></li>
+                  <li><a href="service-details.html">Term & Condition</a></li>
+                  <li><a href="service-details.html">Get Support</a></li>
+                  <li><a href="service-details.html">Cookies Settings</a></li>
+                  <li><a href="service-details.html">Legal</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="footer-widget mb-30">
+              <h2 class="footer-widget-title">Contact Us</h2>
+              <div class="footer-widget-contact">
+                <div class="footer-contact">
+                  <ul>
+                    <li class="address">
+                      <div class="contact-icon">
+                        <i class="fa-regular fa-location-dot"></i>
+                      </div>
+                      <div class="contact-text">
+                        <a href="https://goo.gl/maps/i5WvzMtJNg82JDnM7">2th Street, Office 8 Road <br>
+                          4141 Berlin, Germeny City</a>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="contact-icon">
+                        <i class="fa-light fa-envelope"></i>
+                      </div>
+                      <div class="contact-text">
+                        <a href="https://gedexo.com/">support@gmail.com <br> help1234@mail.com</a>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="contact-icon">
+                        <i class="fa-light fa-phone"></i>
+                      </div>
+                      <div class="contact-text">
+                        <a href="tel:+91 6282134481">(55) 88 99 66 11</a><br>
+                        <a href="#">( 11 ) 12 22 33 99</a>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12">
+            <div class="footer-bottom-borderss"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom-area">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-6">
+            <div class="copyright-text">
+              <p>Copyright © 2023 <a href="https://gedexo.com/"> <span> Gedexo</span></a>, All rights reserved.</p>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="footer-bottom-menu">
+              {% comment %} <ul class="p-0">
+                <li>
+                  <a href="#">Privacy Policy</a>
+                </li>
+                <li>
+                  <a href="#">Terms of Service</a>
+                </li>
+                <li>
+                  <a href="#">Cookies Settings</a>
+                </li>
+              </ul> {% endcomment %}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!--- End Footer !-->
+  

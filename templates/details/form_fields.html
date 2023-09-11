@@ -1,0 +1,134 @@
+{% load static %}
+{% comment %} {% load static %}
+<div class="row gx-2">
+    <div class="col-lg-12">
+        <div class="single-input-field">
+            {{ form.name.label_tag }}
+            {{ form.name }}
+        </div>
+    </div>
+    <div class="col-lg-12">
+        <div class="single-input-field">
+            {{ form.email.label_tag }}
+            {{ form.email }}
+        </div>
+    </div>
+    <div class="col-lg-6">
+        <div class="single-input-field">
+            {{ form.number.label_tag }}
+            {{ form.number }}
+        </div>
+    </div>
+    <div class="col-lg-6">
+        <div class="single-input-field">
+            {{ form.optionC.label_tag }}
+            {{ form.optionC }}
+        </div>
+    </div>
+    <div class="col-12">
+        <div class="single-input-field">
+            {{ form.message.label_tag }}
+            {{ form.message }}
+        </div>
+    </div>
+</div> {% endcomment %}
+
+
+
+<form action="{% url 'service' %}" id="ewt" class="comment-form" method="POST">
+    {% csrf_token %}
+    <input type="hidden" class="" name="formhidden" value="ewt">
+    <div class="alert alert-success" id="thankYouAlert" style="display: none;">
+      Thank you for your message!
+    </div>
+   
+    <div class="row gx-2">
+      <div class="col-lg-12">
+        <div class="single-input-field">
+          <input name="name" type="text" placeholder="Your Name" required>
+        </div>
+      </div>
+      <div class="col-lg-12">
+        <div class="single-input-field">
+          <input name="email" type="email" placeholder="Email address" required>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="single-input-field">
+          <input name="number" type="number" placeholder="Phone number" required>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="single-input-field">
+          <select name="optionC">
+            <option selected>Subject</option>
+            <option value="1">One</option>
+            <option value="2">Two</option>
+            <option value="3">Three</option>
+          </select>
+        </div>
+      </div>
+      <div class="col-12">
+        <div class="single-input-field">
+          <textarea name="message" placeholder="Subject" rows="4" cols="50" required></textarea>
+        </div> 
+        {% comment %} {% include 'details/form_fields.html' %} {% endcomment %}
+      </div>
+      <div class="col-12">
+        <button class="theme-btn w-100 style-four" id="submitBtn" type="submit">Send Message </button>
+      </div>
+    </div>
+  </form>
+
+
+
+  
+  <script>
+    $(document).ready(function() {
+      $("#ewt").submit(function(event) {
+        event.preventDefault(); // Prevent form submission
+
+        // Simulate form submission
+        // Replace this with actual AJAX request or form submission logic
+        // For demonstration purposes, I'm using a timeout to simulate a delay
+        setTimeout(function() {
+          $("#thankYouAlert").show(); // Show the alert
+          $("#ewt")[0].reset(); // Optionally reset the form fields
+        }, 1000); // Change the timeout value as needed
+      });
+    });
+  </script>
+
+     <!-- Include jQuery library -->
+<!-- Include jQuery library -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<!-- Include jQuery Validation plugin -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.3/jquery.validate.min.js"></script>
+
+<script>
+    $(document).ready(function () {
+        // Initialize form validation on the #con form
+        $("#ewt").validate({
+            rules: {
+                name: "required",
+                email: {
+                    required: true,
+                    email: true
+                },
+                // Add similar rules for other fields
+            },
+            messages: {
+                name: "Please enter your name",
+                email: {
+                    required: "Please enter your email address",
+                    email: "Please enter a valid email address"
+                },
+                // Add similar messages for other fields
+            },
+            submitHandler: function (form) {
+                // Form is valid; you can submit it here if needed
+            }
+        });
+    });
+</script>

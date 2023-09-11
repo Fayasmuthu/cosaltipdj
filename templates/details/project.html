@@ -1,0 +1,329 @@
+{% extends 'partials/baseall.html' %}
+{% load static %}
+{% block contentall %}
+<!-- Menu Sidebar Section Start -->
+    <div class="menu-sidebar-area ">
+        <div class="menu-sidebar-wrapper">
+            <div class="menu-sidebar-close">
+                <button class="menu-sidebar-close-btn" id="menu_sidebar_close_btn">
+                    <i class="fal fa-times"></i>
+                </button>
+            </div>
+            <div class="menu-sidebar-content">
+                <div class="menu-sidebar-logo">
+                    <a href="{% url 'index2' %}" class="standard-logo">
+                        <img src="{% static 'images/logo/footer_logo.png' %}" alt="logo" />
+                    </a>
+                </div>
+                <div class="mobile-nav-menu fix"></div>
+            </div>
+        </div>
+    </div>
+    <!-- Menu Sidebar Section End -->
+
+    <!-- Menu Sidebar Overlay -->
+    <div class="body-overlay"></div>
+
+    {% comment %} <!-- Page Header Area Start !-->
+    <div class="page-header-area style-1">
+        <div class="custom-container">
+            <div class=" page-breadcrumb-sec" style="background-image: url(images/breadcrumb/about.jpg)">
+                <div class="breadcrumb-shape"></div>
+                <div class="page-overlay"></div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="breadcrumb-wrapper">
+                            <div class="breadcrumb-list">
+                                <ul>
+                                    <li><a href="index-2.html">Home</a></li>
+                                    <li class="active">
+                                        <a href="#">Case Studies</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="page-heading">
+                                <h1>There something good in <br/> case studies</h1>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Page Header Area End !--> {% endcomment %}
+
+    <!-- Project Area Start -->
+    <div class="project-filter-area style-1">
+        <div class="sketch" style="background: url({% static 'images/sketch-color.png' %})"></div>
+        <div class="container mt-5">
+            <div class="row">
+                <div class="col-lg-12 mb-48">
+                    <div class="project-view-type filter-button-group">
+                        <button data-filter="*">All</button>
+                        <button data-filter=".business">Business</button>
+                        <button data-filter=".financial">Financial</button>
+                        <button data-filter=".managing">Managing</button>
+                        <button data-filter=".marketing">Marketing</button>
+                    </div>
+                </div>
+            </div>
+            <div class="row p-0 m-0 isotope-grid">
+                <div class="col-12 col-md-6 mb-64 isotope-item business">
+                    <div class="portfolio-card style-two ">
+                        <div class="portfolio-image">
+                            <img src="{% static 'images/case-studies-home-2/Image.png' %}" alt="" />
+                        </div>
+                        <div class="content">
+                            <a href="project-details.html">
+                                <div class="icon">
+                                    <i class="icon-arrow-right-2"></i>
+                                </div>
+                            </a>
+                            <a href="project-details.html">
+                                <h4>We can blend consult multiple ways</h4>
+                            </a>
+                            <p>We are lorem ipsum dolor sit amet consectetur. Mauris integer at vestibulum at vitae tellus.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 mb-64 isotope-item financial marketing">
+                    <div class="portfolio-card style-two">
+                        <div class="portfolio-image">
+                            <img src="{% static 'images/case-studies-home-2/case-studies-2.png' %}" alt="" />
+                        </div>
+                        <div class="content">
+                            <a href="project-details.html">
+                                <div class="icon">
+                                    <i class="icon-arrow-right-2"></i>
+                                </div>
+                            </a>
+                            <a href="project-details.html">
+                                <h4>Deliver joy and optimism in every bite</h4>
+                            </a>
+                            <p>Consaltip lorem ipsum dolor sit amet consectetur. Maecenas eget eget care sed ut arcu cras mattis.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 mb-64 isotope-item managing business">
+                    <div class="portfolio-card style-two">
+                        <div class="portfolio-image">
+                            <img src="{% static 'images/common/image-card-3.jpg' %}" alt="" />
+                        </div>
+                        <div class="content">
+                            <a href="project-details.html">
+                                <div class="icon">
+                                    <i class="icon-arrow-right-2"></i>
+                                </div>
+                            </a>
+                            <a href="project-details.html">
+                                <h4>We can blend consult multiple ways</h4>
+                            </a>
+                            <p>We are lorem ipsum dolor sit amet consectetur. Mauris integer at vestibulum at vitae tellus.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 mb-64 isotope-item financial marketing">
+                    <div class="portfolio-card style-two">
+                        <div class="portfolio-image">
+                            <img src="{% static 'images/common/image-card-4.jpg' %}" alt="" />
+                        </div>
+                        <div class="content">
+                            <a href="project-details.html">
+                                <div class="icon">
+                                    <i class="icon-arrow-right-2"></i>
+                                </div>
+                            </a>
+                            <a href="project-details.html">
+                                <h4>Deliver joy and optimism in every bite</h4>
+                            </a>
+                            <p>Consaltip lorem ipsum dolor sit amet consectetur. Maecenas eget eget care sed ut arcu cras mattis.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 mb-64 isotope-item  marketing">
+                    <div class="portfolio-card style-two">
+                        <div class="portfolio-image">
+                            <img src="{% static 'images/common/image-card-5.jpg' %}" alt="" />
+                        </div>
+                        <div class="content">
+                            <a href="project-details.html">
+                                <div class="icon">
+                                    <i class="icon-arrow-right-2"></i>
+                                </div>
+                            </a>
+                            <a href="project-details.html">
+                                <h4>We can blend consult multiple ways</h4>
+                            </a>
+                            <p>We are lorem ipsum dolor sit amet consectetur. Mauris integer at vestibulum at vitae tellus.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 mb-64 isotope-item financial managing">
+                    <div class="portfolio-card style-two">
+                        <div class="portfolio-image">
+                            <img src="{% static 'images/common/image-card-6.jpg' %}" alt="" />
+                        </div>
+                        <div class="content">
+                            <a href="project-details.html">
+                                <div class="icon">
+                                    <i class="icon-arrow-right-2"></i>
+                                </div>
+                            </a>
+                            <a href="project-details.html">
+                                <h4>Deliver joy and optimism in every bite</h4>
+                            </a>
+                            <p>Consaltip lorem ipsum dolor sit amet consectetur. Maecenas eget eget care sed ut arcu cras mattis.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Project Area End -->
+
+    <!-- FAQ Area Start -->
+    <div class="faq-area style-1">
+        <div class="shape-one" style=" background-image: url({% static 'images/shape/Rectangle.png' %})"></div>
+        <div class="shape-two" style=" background-image: url({% static 'images/shape/shape-2.png' %})"></div>
+        <div class="sketch" style="background: url({% static 'images/sketch-color.png' %})"></div>
+        <div class="container">
+            <div class="row justify-content-between">
+                <div class="col-lg-12">
+                    <div class="section-title style-three align-items-center align-items-lg-start">
+                        <h2 class="title">Frequently Ask Question</h2>
+                        <div class="theme-btn-wrapper">
+                            <a href="contact.html" class="theme-btn">
+                                Get in Touch
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-7">
+                    <div class="accordion-wrapper" id="faq1">
+                        <!-- Single Accordion Start -->
+                        <div class="accordion-list-item">
+                            <div id="headingOne">
+                                <div class="accordion-head" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    <h3 class="accordion-title">1. Do you have examples of past case results?</h3>
+                                </div>
+                            </div>
+                            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#faq1">
+                                <div class="accordion-item-body">
+                                    <p>Lorem ipsum dolor sit amet consectetur. Netus cursus purus faucibus blandit project discussion elit faucibus potenti cum tempus non. Tortor id morbi velit mollis aliquet.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Single Accordion End -->
+                        <!-- Single Accordion Start -->
+                        <div class="accordion-list-item">
+                            <div id="headingTwo">
+                                <div class="accordion-head collapsed"  data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    <h3 class="accordion-title">2. How can I become a partner?</h3>
+                                </div>
+                            </div>
+                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#faq1">
+                                <div class="accordion-item-body">
+                                    <p>Porem ipsum dolor sit amet consectetur. Netus cursus purus faucibus blandit project discussion elit faucibus potenti cum tempus non. Tortor id morbi velit mollis Uliquet.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Single Accordion End -->
+                        <!-- Single Accordion Start -->
+                        <div class="accordion-list-item">
+                            <div id="headingThree">
+                                <div class="accordion-head collapsed" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    <h3 class="accordion-title">3. How can i get involved?</h3>
+                                </div>
+                            </div>
+                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#faq1">
+                                <div class="accordion-item-body">
+                                    <p>Qorem ipsum dolor sit amet consectetur. Netus cursus purus faucibus blandit project discussion elit faucibus potenti cum tempus non. Tortor id morbi velit mollis Pliquet.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Single Accordion End -->
+                        <!-- Single Accordion Start -->
+                        <div class="accordion-list-item">
+                            <div id="headingFour">
+                                <div class="accordion-head collapsed" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                    <h3 class="accordion-title">4. How much will it cost?</h3>
+                                </div>
+                            </div>
+                            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#faq1">
+                                <div class="accordion-item-body">
+                                    <p>Rorem ipsum dolor sit amet consectetur. Netus cursus purus faucibus blandit project discussion elit faucibus potenti cum tempus non. Tortor id morbi velit mollis tliquet.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Single Accordion End -->
+                        <!-- Single Accordion Start -->
+                        <div class="accordion-list-item">
+                            <div id="headingFive">
+                                <div class="accordion-head collapsed" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                    <h3 class="accordion-title">5. Who can i contact for further information?</h3>
+                                </div>
+                            </div>
+                            <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#faq1">
+                                <div class="accordion-item-body">
+                                    <p>Borem ipsum dolor sit amet consectetur. Netus cursus purus faucibus blandit project discussion elit faucibus potenti cum tempus non. Tortor id morbi velit mollis yliquet.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Single Accordion End -->
+                    </div>
+                </div>
+                <div class="col-lg-5">
+                    <div class="post-comments-form">
+                        <div class="comment-respond">
+                            <div class="post-comments-title">
+                                <p class="sub-title">Get more updates</p>
+                                <h5>Send Us a Message</h5>
+                            </div>
+                            <form action="#" class="comment-form">
+                                <div class="row gx-2">
+                                    <div class="col-lg-12">
+                                        <div class="single-input-field">
+                                            <input name="name" type="text" placeholder="Your Name">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-12">
+                                        <div class="single-input-field">
+                                            <input name="email" type="email" placeholder="Email address">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="single-input-field">
+                                            <input name="number" type="number" placeholder="Phone number">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="single-input-field">
+                                            <select>
+                                                <option selected>Subject</option>
+                                                <option value="1">One</option>
+                                                <option value="2">Two</option>
+                                                <option value="3">Three</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="single-input-field">
+                                                  <textarea name="message" placeholder="Subject" rows="4"
+                                                            cols="50"></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <button class="theme-btn w-100 style-four" type="submit">Send Message </button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- FAQ Area End -->
+    {% endblock  %}

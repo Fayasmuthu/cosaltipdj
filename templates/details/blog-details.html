@@ -1,0 +1,291 @@
+{% extends 'partials/baseall.html' %}
+{% load static %}
+{% block contentall %}
+<!-- Menu Sidebar Section Start -->
+    <div class="menu-sidebar-area ">
+        <div class="menu-sidebar-wrapper">
+            <div class="menu-sidebar-close">
+                <button class="menu-sidebar-close-btn" id="menu_sidebar_close_btn">
+                    <i class="fal fa-times"></i>
+                </button>
+            </div>
+            <div class="menu-sidebar-content">
+                <div class="menu-sidebar-logo">
+                    <a href="{% url 'index2' %}" class="standard-logo">
+                        <img src="{% static 'images/logo/footer_logo.png' %}" alt="logo" />
+                    </a>
+                </div>
+                <div class="mobile-nav-menu fix"></div>
+            </div>
+        </div>
+    </div>
+    <!-- Menu Sidebar Section End -->
+
+    <!-- Menu Sidebar Overlay -->
+    <div class="body-overlay"></div>
+
+    {% comment %} <!-- Page Header Area Start !-->
+    <div class="page-header-area style-1">
+        <div class="custom-container">
+            <div class=" page-breadcrumb-sec" style="background-image: url({% static 'images/hero/blog-details.jpg' %})">
+                <div class="breadcrumb-shape"></div>
+                <div class="page-overlay"></div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="breadcrumb-wrapper">
+                            <div class="breadcrumb-list">
+                                <ul>
+                                    <li><a href="{% url 'index2' %}">Home</a></li>
+                                    <li class="active">
+                                        <a href="{% url 'blog' %}">Blog</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="page-heading">
+                                <h1>5 valuable business tips you can grow up your business easily</h1>
+                            </div>
+                            <div class="single-post-meta ">
+                                <span class="post-type">Career</span>
+                                <span><i class="icon-user-2"></i>John Smith</span>
+                                <span><a href="#"><i class="icon-calendar-minus-2"></i>Jan 17, 2023</a></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Page Header Area End !--> {% endcomment %}
+
+    <div class="blog-details-area">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-xxl-10 blog-details-wrapper">
+                    <!-- Post Details Start -->
+                    <article class="single-post-item mb-0">
+                        <div class="post-content-wrapper">
+                            <div class="post-content mb-0">
+                                <p class="mb-48">Design and development may seem like two separate worlds, but they can work together seamlessly to create stunning and
+                                functional software. In this post, we'll explore the benefits of integrating design and development early on in a
+                                project, and how it can lead to a better end product.</p>
+                                <h4>Interview multiple candidates</h4>
+                                <p class="mb-48">Lorem ipsum dolor sit amet, consectetur adipiscing elit proin mi pellentesque lorem turpis feugiat non sed sed sed
+                                aliquam lectus sodales gravida turpis maassa odio faucibus accumsan turpis nulla tellus purus ut cursus lorem in
+                                pellentesque risus</p>
+                                <div class="post-thumbnail">
+                                    <div class="image">
+                                        <img src="{% static 'images/blog/blog-details-2.jpg' %}" alt="blog" />
+                                    </div>
+                                    <div class="image">
+                                        <img src="{% static 'images/blog/blog-details.jpg' %}" alt="" />
+                                    </div>
+                                </div>
+                                <h5 class="mt-70">Search for the right experience</h5>
+                                <p class="mb-48">Lorem ipsum dolor sit amet, consectetur adipiscing elit proin mi pellentesque lorem turpis feugiat non sed sed sed
+                                aliquam lectus sodales gravida turpis maassa odio. we'll explore the importance of design in the software development
+                                process and how it can lead to more successful projects.</p>
+                                <p
+                                    class="mb-16">Lorem ipsum dolor sit amet consectetur. Ipsum vitae tincidunt adipiscing sed tellus nulla sit ultrices. Arcu maecenas
+                                quam iaculis ullamcorper id posuere. Leo congue nulla quam pharetra. Pellentesque morbi dictumst congue risus luctus.
+                                Dictum eu maecenas ipsum dolor vel imperdiet. Euismod fermentum sed quisque risus malesuada molestie. Aliquam ut vel
+                                penatibus eu sit in egestas molestie nisl. Interdum euismod mattis euismod vulputate non.</p>
+                                <ul class="content-list-item">
+                                    <li>morbi dictumst congue risus luctus</li>
+                                    <li>Porttitor nibh est vulputate vitae sem vitae.</li>
+                                    <li>Amet tellus nisl risus lorem vulputate velit eget.</li>
+                                    <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+                                </ul>
+                                <blockquote>
+                                    <p>“Lorem ipsum dolor sit amet consectetur. Consequat euismod consectetur lorem auctor volutpat rhoncus nulla. Neque
+                                    vulputate convallis suscipit lobortis vel ornare viverra ridiculus ultrices. Pellentesque morbi dictumst congue risus
+                                    luctus”
+                                    </p>
+                                    <footer>Esabela Marun</footer>
+                                </blockquote>
+
+                                <h5 class="mb-16">Once you hire them, give them access for all tools & resources for
+                                    success</h5>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit ut suspendisse convallis enim tincidunt nunc condimentum
+                                facilisi accumsan tempor donec project dolor malesuada vestibulum in sed sed morbi accumsan tristique turpis</p>
+                                <div class="single-post-meta">
+                                    <div class="blog-post-tag">
+                                        <span>Post Tag:</span>
+                                        <a href="#">Business</a>
+                                        <a href="#">Marketing</a>
+                                        <a href="#">Strategy</a>
+                                    </div>
+                                    <div class="social-share">
+                                        <span class="social-share-title">Share On:</span>
+                                        <a class="linkedin" href="#"><i class="icon-linkedin"></i></a>
+                                        <a class="twitter" href="#"><i class="icon-twitter"></i></a>
+                                        <a class="facebook" href="#"><i class="icon-facebook"></i></a>
+                                    </div>
+                                </div>
+                                <div class="post-testimonial">
+                                    <div class="image">
+                                        <img src="{% static 'images/blog/blog-details-meta.jpg' %}" alt="image">
+                                    </div>
+                                    <div class="content-wrapper">
+                                        <h5>Jenny Wilson</h5>
+                                        <p
+                                            class="mb-16">Lorem ipsum dolor sit amet consectetur. Nec nunc pellentesque massa pretium. Quam sapien nec venenatis vivamus sed cras faucibus mi viverra. Quam faucibus morbi cras vitae neque.</p>
+                                        <div class="testimonial-post-meta">
+                                            <p class="meta-author">Chief Advisor </p>
+                                            <div class="social-share">
+                                                <a class="linkedin" href="#"><i class="icon-linkedin"></i></a>
+                                                <a class="twitter" href="#"><i class="icon-twitter"></i></a>
+                                                <a class="facebook" href="#"><i class="icon-facebook"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Comment Form Start -->
+                    <div class="post-comments-form style-two mt-120">
+                        <div class="comment-respond style-two">
+                            <div class="post-comments-title style-two">
+                                <h5>Leave a Reply</h5>
+                            </div>
+                            <form action="#" method="post" class="comment-form">
+                                {% csrf_token %}
+                                <div class="row gx-2">
+                                    <div class="col-xl-6">
+                                        <label>Full Name</label>
+                                        <div class="contacts-name">
+                                            <input name="author" type="text" placeholder="Your name here">
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-6">
+                                        <label>Your Mail</label>
+                                        <div class="contacts-email">
+                                            <input name="email" type="text" placeholder="Your email here*">
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-12">
+                                        <label>Your Comment</label>
+                                        <div class="contacts-message">
+                                            <textarea class="style-two" name="comment" cols="20" rows="3"
+                                                placeholder="Type your comment"></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <button class="theme-btn mt-20" type="submit"
+                                            data-dashlane-rid="97e94a7f0649a6e6" data-form-type="other"
+                                            data-dashlane-label="true">Submit</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <!-- Comment Form End -->
+                    <!-- Post Details End -->
+                </div>
+            </div>
+        </div>
+        <!-- Related Blog Start -->
+        <div class="related-post-area style-1">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="section-title style-two mb-64 align-items-start align-items-lg-center ">
+                            <h2 class="title text-start">
+                                <span class="under-line style-two">Related articles</span>
+                            </h2>
+                            <div class="">
+                                <a class="theme-btn" href="{% url 'blog' %}">Browse all articles</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-md-6 col-xl-4">
+                        <div class="post-card-one style-two">
+                            <div class="post-image">
+                                <img src="{% static 'images/post_card/Image-2.jpg' %}" alt="post" />
+                            </div>
+                            <div class="content-wrapper">
+                                <div class="post-content">
+                                    <div class="post-meta">
+                                        <div class="meta-info">
+                                            <span><i class="icon-user"></i></span>
+                                            <p>By Alex Doe</p>
+                                        </div>
+                                        <div class="meta-info">
+                                            <span><i class="icon-calender"></i></span>
+                                            <p>Jan 17, 2023</p>
+                                        </div>
+                                    </div>
+                                    <a href="blog-details.html">
+                                        <h4 class="title">5 valuable business tips you can grow up your business easily</h4>
+                                    </a>
+                                </div>
+                                <div>
+                                    <a href="blog-details.html" class="theme-btn style-three"><span>Read More</span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-xl-4">
+                        <div class="post-card-one style-two">
+                            <div class="post-image">
+                                <img src="{% static 'images/post_card/Image-1.jpg' %}" alt="post" />
+                            </div>
+                            <div class="content-wrapper">
+                                <div class="post-content">
+                                    <div class="post-meta">
+                                        <div class="meta-info">
+                                            <span><i class="icon-user"></i></span>
+                                            <p>By Michel John</p>
+                                        </div>
+                                        <div class="meta-info">
+                                            <span><i class="icon-calender"></i></span>
+                                            <p>Jan 17, 2023</p>
+                                        </div>
+                                    </div>
+                                    <a href="{% url 'blog_details' %}">
+                                        <h4 class="title">5 social media funnels to grow your business audience</h4>
+                                    </a>
+                                </div>
+                                <div>
+                                    <a href="{% url 'blog_details' %}" class="theme-btn style-three"><span>Read More</span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-xl-4">
+                        <div class="post-card-one style-two mt-24 mt-xl-0">
+                            <div class="post-image">
+                                <img src="{% static 'images/post_card/Image.jpg' %}" alt="post" />
+                            </div>
+                            <div class="content-wrapper">
+                                <div class="post-content">
+                                    <div class="post-meta">
+                                        <div class="meta-info">
+                                            <span><i class="icon-user"></i></span>
+                                            <p>By Marina</p>
+                                        </div>
+                                        <div class="meta-info">
+                                            <span><i class="icon-calender"></i></span>
+                                            <p>Jan 17, 2023</p>
+                                        </div>
+                                    </div>
+                                    <a href="{% url 'blog_details' %}">
+                                        <h4 class="title">3 marketing tools you should be paying attention to in 2024</h4>
+                                    </a>
+                                </div>
+                                <div>
+                                    <a href="{% url 'blog_details' %}" class="theme-btn style-three"><span>Read More</span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Related Blog End -->
+    </div>
+    <!--- Blog End !-->
+    {% endblock  %}

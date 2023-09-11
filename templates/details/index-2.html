@@ -1,0 +1,961 @@
+{% extends 'partials/base.html' %}
+{% load static %}
+{% block content %}
+    <!-- Menu Sidebar Section Start !-->
+    <div class="menu-sidebar-area ">
+        <div class="menu-sidebar-wrapper">
+            <div class="menu-sidebar-close">
+                <button class="menu-sidebar-close-btn" id="menu_sidebar_close_btn">
+                    <i class="fal fa-times"></i>
+                </button>
+            </div>
+            <div class="menu-sidebar-content">
+                <div class="menu-sidebar-logo">
+                    <a href="index-2.html" class="standard-logo">
+                        <img src="{% static 'images/logo/footer_logo.png' %}" alt="logo" />
+                    </a>
+                </div>
+                <div class="mobile-nav-menu fix"></div>
+            </div>
+        </div>
+    </div>
+    <!-- Menu Sidebar Section end !-->
+
+    <!-- Menu Sidebar Section Start -->
+    <div class="body-overlay"></div>
+
+    <!-- Slider Area Start  !-->
+    <div class="slider-area style-1 bg-icon">
+        <div class="shape-one"></div>
+        <div class="shape-two"></div>
+        <div class="slider-wrapper">
+            <!-- single slider start !-->
+            {% comment %} <div class="single-slider-wrapper">
+                <div class="single-slider">
+                    <div class="slider-overlay"></div>
+                    <div class="slider-container h-100 align-self-center">
+                        <div class="row h-100 justify-content-center">
+                            <div class="col-md-7 align-self-center order-2 order-md-1">
+                                <div class="slider-content-wrapper">
+                                    <div class="slider-content">
+                                        <h1 class="slider-title">Welcome to
+                                            <span class="under-line style-two under-line-green">
+                                                consaltip </span> <br> your trusted partner <br>
+                                            in business success
+                                        </h1>
+                                        <p class="slider-short-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit et ut massa <br> libero egestas malesuada viverra gravida libero cursus.</p>
+                                        <div class="slider-btn-wrapper">
+                                            <a href="contact.html" class="slider-btn active">Get Started</a>
+                                            <a href="service.html" class="slider-btn ">Our Services</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-5 align-self-center order-1 order-md-2">
+                                <div class="slider-image">
+                                    <div class="sketch" style="background-image: url({% static 'images/shape/triangle-shape-white.png' %})"></div>
+                                    <div class="brush-sketch" style="background-image: url({% static 'images/brush-sketch.png' %})"></div>
+                                    <img src="{% static 'images/slider/slider_img.png' %}" alt="feature image" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> {% endcomment %}
+            <!-- single slider end !-->
+            <!-- single slider start !-->
+            <div class="single-slider-wrapper">
+                <div class="single-slider">
+                    <div class="slider-overlay"></div>
+                    <div class="slider-container h-100 align-self-center">
+                        <div class="row h-100">
+                            <div class="col-md-7 align-self-center order-2 order-md-1">
+                                <div class="slider-content-wrapper">
+                                    <div class="slider-content">
+                                        <h1 class="slider-title">
+                                            <span class="under-line style-two under-line-green">
+                                                Accelerating
+                                            </span>
+                                            your business's growth and performance
+                                        </h1>
+                                        <p class="slider-short-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit et ut massa <br> libero egestas malesuada viverra gravida libero cursus.</p>
+                                        <div class="slider-btn-wrapper">
+                                            <a href="{% url 'contact' %}" class="slider-btn active">Get a Appointment</a>
+                                            {% comment %} <a href="service.html" class="slider-btn ">Our Services</a> {% endcomment %}
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-5 align-self-center order-1 order-md-2">
+                                <div class="slider-image">
+                                    <div class="sketch" style="background-image: url({% static 'images/shape/triangle-shape-white.png' %})"></div>
+                                    <div class="brush-sketch" style="background-image: url({% static 'images/brush-sketch.png' %})"></div>
+                                    <img src="{% static 'images/slider/slider_img_2.png' %}" alt="feature image"/>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- single slider end !-->
+            <!-- single slider start !-->
+            {% comment %} <div class="single-slider-wrapper">
+                <div class="single-slider">
+                    <div class="slider-overlay"></div>
+                    <div class="slider-container h-100 align-self-center">
+                        <div class="row h-100">
+                            <div class="col-md-7 align-self-center order-2 order-md-1">
+                                <div class="slider-content-wrapper">
+                                    <div class="slider-content">
+                                        <h1 class="slider-title">We are the best
+                                            Strategy &
+                                            <span class="under-line style-two under-line-green"> Storytelling</span>
+                                            consulting firm
+                                        </h1>
+                                        <p class="slider-short-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit et ut massa <br> libero egestas malesuada viverra gravida libero cursus.</p>
+                                        <div class="slider-btn-wrapper">
+                                            <a href="contact.html" class="slider-btn active">Get Started</a>
+                                            <a href="service.html" class="slider-btn ">Our Services</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-5 align-self-center order-1 order-md-2">
+                                <div class="slider-image">
+                                    <div class="sketch" style="background-image: url({% static 'images/shape/triangle-shape-white.png' %})"></div>
+                                    <div class="brush-sketch" style="background-image: url({% static 'images/brush-sketch.png' %})"></div>
+                                    <img src="{% static 'images/slider/slider_img_4.png' %}" alt="feature image" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> {% endcomment %}
+            <!-- single slider end !-->
+        </div>
+    </div>
+    <!-- Slider Area End !-->
+    <div id="scrolldown-end"></div>
+    <!-- About Us Area Start !-->
+    <div class="about-us-area style-1 pb-0">
+        {% comment %} <div class="scrolldown-btn-wrapper">
+            <a href="#" id="scrolldown" class="scrolldown-btn">
+                <i class="icon-arrow-down-long-2 "></i>
+                <div class="rounded-text rotating">
+                    <img src="{% static 'images/shape/scroll-rotate.png' %}" alt="scroll bottom" />
+                </div>
+            </a>
+        </div> {% endcomment %}
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="about-info-wrapper">
+                    <div class="about-info-card-image">
+                        <div class="sketch-one">
+                            <img src="{% static 'images/shape/image-card-sketch.png' %}" alt="shape" />
+                        </div>
+                        <div class="image-wrapper">
+                            <img src="{% static 'images/home-why-choose01.jpg' %}" alt="choose-us">
+                        </div>
+                    </div>
+                    <div class="about-info-card">
+                        <div class="content-wrapper">
+                            <div class="content">
+                                <h2 class="title">The <span class="under-line style-two">story behind </span> our
+                                    consulting firm
+                                </h2>
+                                <p
+                                    class="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit arcu eleifend quis elementum elementum massa facilisi more cras ullamcorper nibh egestas et cursus praesent.</p>
+                            </div>
+                            <div class="about-counter-card mt-16">
+                                <div class="counter-item">
+                                    <div class="counter-title">
+                                        <h2 class="number">
+                                            <span class="counter">1200</span>+
+                                        </h2>
+                                    </div>
+                                    <div class="counter-content">
+                                        <p class="text">Companies helped</p>
+                                    </div>
+                                </div>
+                                <div class="counter-item">
+                                    <div class="counter-title">
+                                        <h2 class="number">
+                                            <span class="counter">300</span>M
+                                        </h2>
+                                    </div>
+                                    <div class="counter-content">
+                                        <p class="text">Team members</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        {% comment %} <div class="">
+                            <a href="contact.html" class="theme-btn image-card-btn"><span>Get In Touch</span></a>
+                        </div> {% endcomment %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- About Us Area End !-->
+    <!-- Why Choose Us Area Start !-->
+    <div class="why-choose-us-area style-5">
+        <div class="container">
+            <div class="row ">
+                <div class="col-lg-12">
+                    <div class="image-card large-title">
+                        <div class="content">
+                            <div class="title-wrapper">
+                                <h2 class="title">Why <span class="under-line style-two"> choose us? </span></h2>
+                                <p class="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit arcu eleifend quis elementum elementum massa facilisi more cras
+                                    ullamcorper nibh egestas et cursus praesent.</p>
+                            </div>
+                            <div class="list-item-wrapper">
+                                <div class="list-item">
+                                    <div class="icon">
+                                        <i class="icon-check"></i>
+                                    </div>
+                                    <p class="text">Top Guaranteed Results</p>
+                                </div>
+                                <div class="list-item">
+                                    <div class="icon">
+                                        <i class="icon-check"></i>
+                                    </div>
+                                    <p class="text">Team of Industry Experts</p>
+                                </div>
+                                <div class="list-item">
+                                    <div class="icon">
+                                        <i class="icon-check"></i>
+                                    </div>
+                                    <p class="text">10+ Years of Experience</p>
+                                </div>
+                            </div>
+                            <div class="">
+                                <a href="{% url 'about' %}" class="theme-btn image-card-btn"><span>About Our Firm</span></a>
+                            </div>
+                        </div>
+                        <div class="image">
+                            <div class="image-card-sketch style-two">
+                                <img src="{% static 'images/shape/image-card-sketch.png' %}" alt="shape" />
+                            </div>
+                            <div class="image-inner">
+                                <div class="image-wrapper">
+                                    <img src="{% static 'images/common/home-why-choose.jpg' %}" alt="choose-us" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Why Choose Us Area End !-->
+
+    <!-- Service Slider Area Start !-->
+    <div class="service-slider-area style-1" style="background: url({% static 'images/service-bg.jpg' %});">
+        <div class="section-overlay"></div>
+        <div class="sketch" style="background-image: url({% static '../../../images/shape/triangle-shape-white.html' %})"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="section-title text-center mb-64">
+                        <h2 class="title text-white"><span class="under-line style-two under-line-green">
+                                High-impa</span>ct services <br> for your business
+                        </h2>
+                        <p
+                            class="desc text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit et ut massa libero <br> egestas malesuada viverra gravida libero cursus nulla leo. </p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="service-slider">
+                    <div class="icon-card">
+                        <div class="icon">
+                            <span class="icon-color"></span>
+                            <i class="icon-project-manangement"></i>
+                        </div>
+                        <div class="content">
+                            <h5 class="title">Project Management</h5>
+                            <p
+                                class="desc"> Lorem ipsum dolor sit amet, consectetur adipiscing elit nibh egestas ullamcorper ipsum nibh quis.</p>
+                        </div>
+                    </div>
+                    <div class="icon-card">
+                        <div class="icon">
+                            <span class="icon-color"></span>
+                            <i class="icon-process-development"></i>
+                        </div>
+                        <div class="content">
+                            <h5 class="title">Process Development</h5>
+                            <p class="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit nibh egestas
+                                ullamcorper ipsum nibh quis.</p>
+                        </div>
+                    </div>
+                    <div class="icon-card">
+                        <div class="icon">
+                            <span class="icon-color"></span>
+                            <i class="icon-commitment"></i>
+                        </div>
+                        <div class="content">
+                            <h5 class="title">Quality Assurance</h5>
+                            <p
+                                class="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit nibh egestas ullamcorper ipsum nibh quis.</p>
+                        </div>
+                    </div>
+                    <div class="icon-card">
+                        <div class="icon">
+                            <span class="icon-color"></span>
+                            <i class="icon-human-resources"></i>
+                        </div>
+                        <div class="content">
+                            <h5 class="title">Human Resources</h5>
+                            <p
+                                class="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit nibh egestas ullamcorper ipsum nibh quis.</p>
+                        </div>
+                    </div>
+                    <div class="icon-card">
+                        <div class="icon">
+                            <span class="icon-color"></span>
+                            <i class="icon-operation"></i>
+                        </div>
+                        <div class="content">
+                            <h5 class="title">Operation & Delegation</h5>
+                            <p
+                                class="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit nibh egestas ullamcorper ipsum nibh quis.</p>
+                        </div>
+                    </div>
+                    <div class="icon-card">
+                        <div class="icon">
+                            <span class="icon-color"></span>
+                            <i class="icon-business-analysis"></i>
+                        </div>
+                        <div class="content">
+                            <h5 class="title">Business Analysis</h5>
+                            <p
+                                class="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit nibh egestas ullamcorper ipsum nibh quis.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-12 col-xl-12 col-lg-12">
+                    <div class="text-center mt-64">
+                        <a href="{% url 'service' %}" class="theme-btn image-card-btn style-four">
+                            <span>Browse All Services</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- Service Slider Area End !-->
+
+    <!-- Process Step Area Start -->
+    <div class="process-step-area style-1">
+        <div class="shape-one" style="background-image: url({% static 'images/shape/shape-2.svg' %})"></div>
+        <div class="shape-two" style="background-image: url({% static 'images/shape/rectangle.svg' %})"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="section-title">
+                        <h2 class="title text-center">A simple yet powerful <br> and
+                            efficient <span class="under-line style-two"> process </span>
+                        </h2>
+                        <p class="desc"> Lorem ipsum dolor sit amet, consectetur adipiscing elit et ut massa libero egestas <br> malesuada viverra gravida libero
+                        cursus nulla leo.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-55">
+                <div class="col-xl-6">
+                    <div class="image-wrapper">
+                        <div class="sketch"></div>
+                        <div class="image-inner">
+                            <img src="{% static 'images/common/home-process.jpg' %}" alt="process">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-6">
+                    <div class="accordion-wrapper-two" id="faq2">
+                        <!-- Single Accordion Start -->
+                        <div class="accordion-list-item">
+                            <div id="headingOne">
+                                <div class="accordion-head" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                                    aria-expanded="true" aria-controls="collapseOne">
+                                    <div class="icon">
+                                        <i class="icon-Analysis"></i>
+                                    </div>
+                                    <h3 class="accordion-title">1. Analysis & Research</h3>
+                                </div>
+                            </div>
+                            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                                data-bs-parent="#faq2">
+                                <div class="accordion-item-body">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipis elit nibh egestas ullamcorper.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Single Accordion End -->
+                        <!-- Single Accordion Start -->
+                        <div class="accordion-list-item">
+                            <div id="headingTwo">
+                                <div class="accordion-head collapsed" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    <div class="icon">
+                                        <i class="icon-Execution"></i>
+                                    </div>
+                                    <h3 class="accordion-title">2. Execution</h3>
+                                </div>
+                            </div>
+                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                                data-bs-parent="#faq2">
+                                <div class="accordion-item-body">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipis elit nibh egestas ullamcorper.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Single Accordion End -->
+                        <!-- Single Accordion Start -->
+                        <div class="accordion-list-item">
+                            <div id="headingThree">
+                                <div class="accordion-head collapsed" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    <div class="icon">
+                                        <i class="icon-Launch"></i>
+                                    </div>
+                                    <h3 class="accordion-title">3. Launch</h3>
+                                </div>
+                            </div>
+                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                                data-bs-parent="#faq2">
+                                <div class="accordion-item-body">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipis elit nibh egestas ullamcorper.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Single Accordion End -->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- Process Step Area End -->
+
+    <!-- Call To Action Area Start !-->
+    <div class="cta-area style-1">
+        <div class="container">
+            <div class="cta-wrapper">
+                <div class="sketch" style=" background-image: url({% static 'images/shape/title-sketch.svg' %})"></div>
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="free-cta-text">
+                            <div class="section-title">
+                                <h2 class="text-white title text-start">Free <span class="under-line style-two">consultation </span><br>for today</h2>
+                                <p class="desc text-white text-start">Lorem ipsum dolor sit amet, consectetur adipiscing elit non nulla nulla nisi, habitant massa eros tempus.</p>
+                            </div>
+                            <div class="button-wrapper">
+                                <a href="{% url 'contact' %}" class="theme-btn style-four" tabindex="0">Get a Appointment</a>
+                                {% comment %} <a href="service.html" class="theme-btn theme-transparant-btn" tabindex="0">Our
+                                    Services</a> {% endcomment %}
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="cta-img">
+                            <img src="{% static 'images/coltation-img/Image.png' %}" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Call To Action Area End-->
+    <!-- Portfolio Area Start -->
+    {% comment %} <div class="portfolio-slider-area style-1">
+        <div class="sketch"></div>
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-12">
+                    <div class="section-title style-three mb-64">
+                        <div class="">
+                            <h2 class="title text-start text-white">
+                                Our <span class="under-line style-two under-line-green"> Case Studies</span>
+                            </h2>
+                            <p
+                                class="desc text-start text-white mt-16">Lorem ipsum dolor sit amet, consectetur adipiscing elit platea nisl <br> tincidunt in aenean felis risus risus nec mi, mattis
+                                            turpis adipiscing <br> consectetur adipiscing elit in platea nisl tincidunt</p>
+                        </div>
+                        <div class="d-flex align-items-center">
+                            <a href="project.html" class="theme-btn style-two">Browse all cases</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fulid">
+            <div class="portfolio-slider-wrapper">
+                <div class="portfolio-card">
+                    <div class="portfolio-image">
+                        <img src="{% static 'images/case-studies/case-card-1.jpg' %}" alt="">
+                    </div>
+                    <div class="content">
+                        <a href="project-details.html">
+                            <h4 class="text-white">Aren - Project we take over with real user</h4>
+                        </a>
+                        <p class="text-white pr-20">Talent.com a new brand identity using their core values of optimism, dolar ipsum <br> transparency and approachability as
+                            inspiration.</p>
+                    </div>
+                </div>
+                <div class="portfolio-card">
+                    <div class="portfolio-image">
+                        <img src="{% static 'images/case-studies/case-card-2.jpg' %}" alt="">
+                    </div>
+                    <div class="content">
+                        <a href="project-details.html">
+                            <h4 class="text-white">We blend consult multiple ways for user</h4>
+                        </a>
+                        <p
+                            class="text-white pr-20">This project pretty excited to announce that we just got nominated at the Webby <br> Awards! easy to understand and to use should be inspired.</p>
+                    </div>
+                </div>
+                <div class="portfolio-card">
+                    <div class="portfolio-image">
+                        <img src="{% static 'images/case-studies/case-card-3.jpg' %}" alt="">
+                    </div>
+                    <div class="content">
+                        <a href="project-details.html">
+                            <h4 class="text-white">Okla - Production for long lasting relation</h4>
+                        </a>
+                        <p
+                            class="text-white pr-20">We are pretty excited to announce that we just got nominated at the Webby  Awa<br>rds! easy to understand our work process.</p>
+                    </div>
+                </div>
+                <div class="portfolio-card">
+                    <div class="portfolio-image">
+                        <img src="{% static 'images/case-studies/case-card-4.jpg' %}" alt="">
+                    </div>
+                    <div class="content">
+                        <a href="project-details.html">
+                            <h4 class="text-white">Aren - Project we take over with real user</h4>
+                        </a>
+                        <p class="text-white pr-20">Talent.com a new brand identity using their core values of optimism, dolar ipsum <br> transparency and approachability as
+                                        inspiration.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> {% endcomment %}
+    <!-- Portfolio Area End -->
+    <!-- Testimonial Area Start -->
+    {% comment %} <div class="testimonial-slider-area style-1">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-12">
+                    <div class="section-title style-three mb-64">
+                        <div class="">
+                            <h2 class="title text-start">
+                                Hear what our great <br> <span class="under-line style-two"> customers </span> say
+                            </h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="testimonial-slider">
+                    <div class="review-card">
+                        <div class="image-wrapper">
+                            <div class="image">
+                                <img src="{% static 'images/review/review.png' %}" alt="review" />
+                            </div>
+                        </div>
+                        <div class="review-content">
+                            <div class="testimonial-card style-three">
+                                <div class="content-wrapper">
+                                    <div class="icon">
+                                        <img src="{% static 'images/icon/star.svg' %}" alt="star" />
+                                        <img src="{% static 'images/icon/star.svg' %}" alt="star" />
+                                        <img src="{% static 'images/icon/star.svg' %}" alt="star" />
+                                        <img src="{% static 'images/icon/star.svg' %}" alt="star" />
+                                        <img src="{% static 'images/icon/star.svg' %}" alt="star" />
+                                    </div>
+                                    <div class="content">
+                                        <p
+                                            class="text">“Lorem ipsum dolor sit amet consectetur. Habitasse tortor pellentesque vestibulum sit techy malesuada. Integer adipiscing molestie adipiscing turpis lobortis sed Lorem ipsum dolor sit amet consectetur. Habitasse tortor pellentesque vestibulum sit techy malesuada. Integer adipiscing molestie adipiscing turpis lobortis sed”</p>
+                                    </div>
+                                    <div class="meta-user">
+                                        <div class="user-info">
+                                            <div class="image">
+                                                <img src="{% static 'images/meta-user/user-1.jpg' %}" alt="user" />
+                                            </div>
+                                            <div class="info">
+                                                <h6>SANIA SMITH</h6>
+                                                <p>VP of Advocacy Company</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="review-card">
+                        <div class="image-wrapper">
+                            <div class="image">
+                                <img src="{% static 'images/review/review-2.png' %}" alt="review" />
+                            </div>
+                        </div>
+                        <div class="review-content">
+                            <div class="testimonial-card style-three">
+                                <div class="content-wrapper">
+                                    <div class="icon">
+                                        <img src="{% static 'images/icon/star.svg' %}" alt="star" />
+                                        <img src="{% static 'images/icon/star.svg' %}" alt="star" />
+                                        <img src="{% static 'images/icon/star.svg' %}" alt="star" />
+                                        <img src="{% static 'images/icon/star.svg' %}" alt="star" />
+                                        <img src="{% static 'images/icon/star.svg' %}" alt="star" />
+                                    </div>
+                                    <div class="content">
+                                        <p
+                                            class="text">“Lorem ipsum dolor sit amet consectetur. Habitasse tortor pellentesque vestibulum sit techy malesuada. Integer adipiscing molestie adipiscing turpis lobortis sed Lorem ipsum dolor sit amet consectetur. Habitasse tortor pellentesque vestibulum sit techy malesuada. Integer adipiscing molestie adipiscing turpis lobortis sed”</p>
+                                    </div>
+                                    <div class="meta-user">
+                                        <div class="user-info">
+                                            <div class="image">
+                                                <img src="{% static 'images/meta-user/user-1.jpg' %}" alt="user" />
+                                            </div>
+                                            <div class="info">
+                                                <h6>SANIA SMITH</h6>
+                                                <p>VP of Advocacy Company</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="review-card">
+                        <div class="image-wrapper">
+                            <div class="image">
+                                <img src="{% static 'images/review/review-3.png' %}" alt="review" />
+                            </div>
+                        </div>
+                        <div class="review-content">
+                            <div class="testimonial-card style-three">
+                                <div class="content-wrapper">
+                                    <div class="icon">
+                                        <img src="{% static 'images/icon/star.svg' %}" alt="star" />
+                                        <img src="{% static 'images/icon/star.svg' %}" alt="star" />
+                                        <img src="{% static 'images/icon/star.svg' %}" alt="star" />
+                                        <img src="{% static 'images/icon/star.svg' %}" alt="star" />
+                                        <img src="{% static 'images/icon/star.svg' %}" alt="star" />
+                                    </div>
+                                    <div class="content">
+                                        <p
+                                            class="text">“Lorem ipsum dolor sit amet consectetur. Habitasse tortor pellentesque vestibulum sit techy malesuada. Integer adipiscing molestie adipiscing turpis lobortis sed Lorem ipsum dolor sit amet consectetur. Habitasse tortor pellentesque vestibulum sit techy malesuada. Integer adipiscing molestie adipiscing turpis lobortis sed”</p>
+                                    </div>
+                                    <div class="meta-user">
+                                        <div class="user-info">
+                                            <div class="image">
+                                                <img src="{% static 'images/meta-user/user-1.jpg' %}" alt="user" />
+                                            </div>
+                                            <div class="info">
+                                                <h6>SANIA SMITH</h6>
+                                                <p>VP of Advocacy Company</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> {% endcomment %}
+    <!-- Testimonial Area End -->
+
+    <!-- Latest Posts Area Start -->
+    {% comment %} <div class="latest-posts-area style-1">
+        <div class="sketch" style="background-image: url({% static 'images/brush-sketch-white.png' %})"></div>
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-12">
+                    <div class="section-title style-three mb-64">
+                        <div class="">
+                            <h2 class="title text-start text-white">
+                                Browse <span class="under-line style-two under-line-green">our articles &amp; </span>
+                                <br> resources
+                            </h2>
+                        </div>
+                        <div class="d-flex align-items-center">
+                            <a href="blog.html" class="theme-btn style-four">Browse all articles</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="post-card-one">
+                        <div class="post-image">
+                            <img src="{% static 'images/post_card/post_card_1.jpg' %}" alt="post" />
+                        </div>
+                        <div class="content-wrapper">
+                            <div class="post-content">
+                                <div class="post-meta">
+                                    <div class="meta-info">
+                                        <span><i class="icon-user"></i></span>
+                                        <p>By Wiliam</p>
+                                    </div>
+                                    <div class="meta-info">
+                                        <span><i class="icon-calender"></i></span>
+                                        <p>Jan 17, 2023</p>
+                                    </div>
+                                </div>
+                                <a href="blog-details.html">
+                                    <h4 class="title">How to grow up your business worlwide easily</h4>
+                                </a>
+                            </div>
+                            <div>
+                                <a href="blog-details.html" class="theme-btn"><span>Read More</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="post-card-one">
+                        <div class="post-image">
+                            <img src="{% static 'images/post_card/post_card_2.jpg' %}" alt="post" />
+                        </div>
+                        <div class="content-wrapper">
+                            <div class="post-content">
+                                <div class="post-meta">
+                                    <div class="meta-info">
+                                        <span><i class="icon-user"></i></span>
+                                        <p>By Wiliam</p>
+                                    </div>
+                                    <div class="meta-info">
+                                        <span><i class="icon-calender"></i></span>
+                                        <p>Jan 17, 2023</p>
+                                    </div>
+                                </div>
+                                <a href="blog-details.html">
+                                    <h4 class="title">How to grow up your business worlwide easily</h4>
+                                </a>
+                            </div>
+                            <div>
+                                <a href="blog-details.html" class="theme-btn"><span>Read More</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> {% endcomment %}
+    <!-- Latest Posts Area End -->
+
+    <!-- Team Slider Area Start -->
+    {% comment %} <div class="team-slider-area style-1">
+        <div class="sketch" style="background-image: url({% static 'images/sketch-color.png' %})"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="section-title style-two mb-64">
+                        <h2 class="title text-center text-lg-start">
+                            The <span class="under-line style-two"> amazing team </span> <br> behind our company
+                        </h2>
+                        <div class="custom-slider-btn style-two">
+                            <a href="#" class='info-card-arrow-btn' id="team-prev"><i class='icon-arrow-left-2'></i></a>
+                            <a href="#" class='info-card-arrow-btn' id="team-next"><i
+                                    class='icon-arrow-right-2'></i></a>
+                        </div>
+                    </div>
+                    <div class="team-slider" id="team_slider_one">
+                        <div class="team-member-card">
+                            <div class="image" style="background-image: url({% static 'images/team/Bg.png' %});">
+                                <img src="{% static 'images/team/Image.png' %}" alt="team-member" />
+                                <div class="image-content-wrapper">
+                                    <div class="user-info">
+                                        <h4><a href="team.html">Ralph Edwards</a></h4>
+                                        <p>Chief Advisor</p>
+                                    </div>
+                                    <div class="social">
+                                        <a href="https://www.linkedin.com/"><i class="icon-linkedin"></i></a>
+                                        <a href="https://twitter.com/"><i class="icon-twitter"></i></a>
+                                        <a href="https://www.pinterest.com/"><i class="icon-pinterest"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="content-wrapper pb-0">
+                                <div class="user-info">
+                                    <h4><a href="team.html">Ralph Edwards</a></h4>
+                                    <p>Chief Advisor</p>
+                                </div>
+                                <div class="social">
+                                    <a href="#"><i class="icon-linkedin"></i></a>
+                                    <a href="#"><i class="icon-twitter"></i></a>
+                                    <a href="#"><i class="icon-pinterest"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="team-member-card">
+                            <div class="image" style="background-image: url({% static 'images/team/Bg.png' %});">
+                                <img src="{% static 'images/team/Image-1.png' %}" alt="team-member" />
+                                <div class="image-content-wrapper">
+                                    <div class="user-info">
+                                        <h4><a href="team.html">Jenny Wilson</a></h4>
+                                        <p>Chief Advisor</p>
+                                    </div>
+                                    <div class="social">
+                                        <a href="https://www.linkedin.com/"><i class="icon-linkedin"></i></a>
+                                        <a href="https://twitter.com/"><i class="icon-twitter"></i></a>
+                                        <a href="https://www.pinterest.com/"><i class="icon-pinterest"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="content-wrapper pb-0">
+                                <div class="user-info">
+                                    <h4><a href="team.html">Jenny Wilson</a></h4>
+                                    <p>Chief Advisor</p>
+                                </div>
+                                <div class="social">
+                                    <a href="#"><i class="icon-linkedin"></i></a>
+                                    <a href="#"><i class="icon-twitter"></i></a>
+                                    <a href="#"><i class="icon-pinterest"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="team-member-card">
+                            <div class="image" style="background-image: url({% static 'images/team/Bg.png' %});">
+                                <img src="{% static 'images/team/Image-2.png' %}" alt="team-member" />
+                                <div class="image-content-wrapper">
+                                    <div class="user-info">
+                                        <h4><a href="team.html">Jonathon Doe</a></h4>
+                                        <p>Chief Advisor</p>
+                                    </div>
+                                    <div class="social">
+                                        <a href="https://www.linkedin.com/"><i class="icon-linkedin"></i></a>
+                                        <a href="https://twitter.com/"><i class="icon-twitter"></i></a>
+                                        <a href="https://www.pinterest.com/"><i class="icon-pinterest"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="content-wrapper pb-0">
+                                <div class="user-info">
+                                    <h4><a href="team.html">Jonathon Doe</a></h4>
+                                    <p>Chief Advisor</p>
+                                </div>
+                                <div class="social">
+                                    <a href="#"><i class="icon-linkedin"></i></a>
+                                    <a href="#"><i class="icon-twitter"></i></a>
+                                    <a href="#"><i class="icon-pinterest"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="team-member-card">
+                            <div class="image" style="background-image: url({% static 'images/team/Bg.png' %});">
+                                <img src="{% static 'images/team/Image-3.png' %}" alt="team-member" />
+                                <div class="image-content-wrapper">
+                                    <div class="user-info">
+                                        <h4><a href="team.html">Kathryn Murphy</a></h4>
+                                        <p>Chief Advisor</p>
+                                    </div>
+                                    <div class="social">
+                                        <a href="https://www.linkedin.com/"><i class="icon-linkedin"></i></a>
+                                        <a href="https://twitter.com/"><i class="icon-twitter"></i></a>
+                                        <a href="https://www.pinterest.com/"><i class="icon-pinterest"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="content-wrapper pb-0">
+                                <div class="user-info">
+                                    <h4><a href="team.html">Kathryn Murphy</a></h4>
+                                    <p>Chief Advisor</p>
+                                </div>
+                                <div class="social">
+                                    <a href="#"><i class="icon-linkedin"></i></a>
+                                    <a href="#"><i class="icon-twitter"></i></a>
+                                    <a href="#"><i class="icon-pinterest"></i></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="team-member-card">
+                            <div class="image" style="background-image: url({% static 'images/team/Bg.png' %});">
+                                <img src="{% static 'images/team/Image-4.png' %}" alt="team-member" />
+                                <div class="image-content-wrapper">
+                                    <div class="user-info">
+                                        <h4><a href="team.html">Olivia Wilson</a></h4>
+                                        <p>Chief Advisor</p>
+                                    </div>
+                                    <div class="social">
+                                        <a href="https://www.linkedin.com/"><i class="icon-linkedin"></i></a>
+                                        <a href="https://twitter.com/"><i class="icon-twitter"></i></a>
+                                        <a href="https://www.pinterest.com/"><i class="icon-pinterest"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="content-wrapper pb-0">
+                                <div class="user-info">
+                                    <h4><a href="team.html">Olivia Wilson</a></h4>
+                                    <p>Chief Advisor</p>
+                                </div>
+                                <div class="social">
+                                    <a href="#"><i class="icon-linkedin"></i></a>
+                                    <a href="#"><i class="icon-twitter"></i></a>
+                                    <a href="#"><i class="icon-pinterest"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> {% endcomment %}
+    <!-- Team Slider Area End -->
+    <!-- Brand Slider start -->
+    <div class="brand-slider-area style-1">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="brand-slider">
+                        <div class="brand-logo-wrapper">
+                            <div class="client-logo">
+                                <img src="{% static 'images/brand/brand1.png' %}" alt="brand" />
+                            </div>
+                        </div>
+                        <div class="brand-logo-wrapper">
+                            <div class="client-logo">
+                                <img src="{% static 'images/brand/brand_2.png' %}" alt="brand" />
+                            </div>
+                        </div>
+                        <div class="brand-logo-wrapper">
+                            <div class="client-logo">
+                                <img src="{% static 'images/brand/brand_3.png' %}" alt="brand" />
+                            </div>
+                        </div>
+                        <div class="brand-logo-wrapper">
+                            <div class="client-logo">
+                                <img src="{% static 'images/brand/brand_4.png' %}" alt="brand" />
+                            </div>
+                        </div>
+                        <div class="brand-logo-wrapper">
+                            <div class="client-logo">
+                                <img src="{% static 'images/brand/brand_5.png' %}" alt="brand" />
+                            </div>
+                        </div>
+                        <div class="brand-logo-wrapper">
+                            <div class="client-logo">
+                                <img src="{% static 'images/brand/brand1.png' %}" alt="brand" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Brand Slider End -->
+
+   
+    {% endblock  %}

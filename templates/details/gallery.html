@@ -1,0 +1,129 @@
+{% extends 'partials/baseall.html' %}
+{% load static %}
+{% block contentall %}
+    <!-- Menu Sidebar Section Start !-->
+    <div class="menu-sidebar-area ">
+        <div class="menu-sidebar-wrapper">
+            <div class="menu-sidebar-close">
+                <button class="menu-sidebar-close-btn" id="menu_sidebar_close_btn">
+                    <i class="fal fa-times"></i>
+                </button>
+            </div>
+            <div class="menu-sidebar-content">
+                <div class="menu-sidebar-logo">
+                    <a href="index-2.html" class="standard-logo">
+                        <img src="{% static 'images/logo/footer_logo.png' %}" alt="logo" />
+                    </a>
+                </div>
+                <div class="mobile-nav-menu fix"></div>
+            </div>
+        </div>
+    </div>
+    <!-- Menu Sidebar Section end !-->
+
+    <!-- Menu Sidebar Section Start -->
+    <div class="body-overlay"></div>
+
+
+    <!-- Latest Posts Area Start -->
+    <div class="latest-posts-area style-2 ">
+        <div class="sketch" style=" background-image: url({% static 'images/sketch-color.png' %})"></div>
+        <div class="container mt-5">
+            <div class="row">
+                <div class="col-lg-12 mt-5">
+                    <div class="section-title style-two mb-64 align-items-start align-items-lg-center ">
+                        <h2 class="title text-start">
+                            <span class="under-line style-two"> Browse our blogs </span> & <br> resources
+                        </h2>
+                        <div class="">
+                            <a class="theme-btn" href="{% url 'blog' %}">Browse all articles</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                
+                {% for i in photo %}
+                <div class="col-12 col-md-6 col-xl-4">
+                    <div class="post-card-one style-two">
+                        <div class="post-image">
+                            <img src="{{i.image.url}}" alt="post" />
+                        </div>
+                        <div class="content-wrapper">
+                            <div class="post-content">
+                                {% comment %} <div class="post-meta">
+                                    <div class="meta-info">
+                                        <span><i class="icon-user"></i></span>
+                                        <p>By Alex Doe</p>
+                                    </div>
+                                    <div class="meta-info">
+                                        <span><i class="icon-calender"></i></span>
+                                        <p>Jan 17, 2023</p>
+                                    </div>
+                                </div> {% endcomment %}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}
+
+
+                {% comment %} <div class="col-12 col-md-6 col-xl-4">
+                    <div class="post-card-one style-two">
+                        <div class="post-image">
+                            <img src="{% static 'images/post_card/Image-1.jpg' %}" alt="post" />
+                        </div>
+                        <div class="content-wrapper">
+                            <div class="post-content">
+                                <div class="post-meta">
+                                    <div class="meta-info">
+                                        <span><i class="icon-user"></i></span>
+                                        <p>By Michel John</p>
+                                    </div>
+                                    <div class="meta-info">
+                                        <span><i class="icon-calender"></i></span>
+                                        <p>Jan 17, 2023</p>
+                                    </div>
+                                </div>
+                                <a href="blog-details.html">
+                                    <h4 class="title">5 social media funnels to grow your business audience</h4>
+                                </a>
+                            </div>
+                            <div>
+                                <a href="blog-details.html" class="theme-btn style-three"><span>Read More</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-xl-4">
+                    <div class="post-card-one style-two mt-24 mt-xl-0">
+                        <div class="post-image">
+                            <img src="{% static 'images/post_card/Image-2.jpg' %}" alt="post" />
+                        </div>
+                        <div class="content-wrapper">
+                            <div class="post-content">
+                                <div class="post-meta">
+                                    <div class="meta-info">
+                                        <span><i class="icon-user"></i></span>
+                                        <p>By Marina</p>
+                                    </div>
+                                    <div class="meta-info">
+                                        <span><i class="icon-calender"></i></span>
+                                        <p>Jan 17, 2023</p>
+                                    </div>
+                                </div>
+                                <a href="blog-details.html">
+                                    <h4 class="title">3 marketing tools you should be paying attention to in 2024</h4>
+                                </a>
+                            </div>
+                            <div>
+                                <a href="blog-details.html" class="theme-btn style-three"><span>Read More</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div> {% endcomment %}
+            </div>
+        </div>
+    </div>
+    <!-- Latest Posts Area End -->
+{% endblock  %}

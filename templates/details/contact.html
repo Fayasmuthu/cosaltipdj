@@ -1,0 +1,460 @@
+{% extends 'partials/baseall.html' %}
+{% load static %}
+{% block contentall %}
+    <!-- Menu Sidebar Section Start -->
+    <div class="menu-sidebar-area ">
+        <div class="menu-sidebar-wrapper">
+            <div class="menu-sidebar-close">
+                <button class="menu-sidebar-close-btn" id="menu_sidebar_close_btn">
+                    <i class="fal fa-times"></i>
+                </button>
+            </div>
+            <div class="menu-sidebar-content">
+                <div class="menu-sidebar-logo">
+                    <a href="{% url 'index2' %}" class="standard-logo">
+                        <img src="{% static 'images/logo/footer_logo.png' %}" alt="logo" />
+                    </a>
+                </div>
+                <div class="mobile-nav-menu fix"></div>
+            </div>
+        </div>
+    </div>
+    <!-- Menu Sidebar Section End -->
+
+    <!-- Menu Sidebar Overlay -->
+    {% comment %} <div class="body-overlay"></div>
+    <!-- Page Header Area Start !-->
+    <div class="page-header-area style-1">
+        <div class="custom-container">
+            <div class=" page-breadcrumb-sec">
+                <div class="breadcrumb-shape"></div>
+                <div class="page-overlay"></div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="breadcrumb-wrapper">
+                            <div class="breadcrumb-list">
+                                <ul>
+                                    <li><a href="index-2.html">Home</a></li>
+                                    <li class="active">
+                                        <a href="#">Contact Us</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="page-heading">
+                                <h1>We are friendly team about consulting</h1>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Page Header Area End !--> {% endcomment %}
+
+    <!--contact info section  -->
+    <div class="contact-page-contact-info">
+        <div class="container mt-5">
+            <div class="contact-info-card-wrapper">
+                <div class="image-wrapper">
+                    <div class="project-info-sketch" style="background-image: url({% static 'images/shape/image-card-sketch.png' %})"></div>
+                    <img class="tilt-animate" src="{% static 'images/common/contact-info.jpg' %}" alt="choose-us" />
+                </div>
+                <div class="info-section">
+                    <div class="section-title">
+                        <h2 class="title text-start"> <span class="under-line style-two"> Get In Touch </span></h2>
+                    </div>
+                    <div class="contact-list-wrapper">
+                        <div class="icon-card style-five">
+                            <div class="icon">
+                                <i class="icon-phone-3"></i>
+                            </div>
+                            <div class="content">
+                                <h5 class="title">Call Today. It’s Free</h5>
+                                <p class="desc">+ (123) 456 7890 <br> + (000) 123 4567</p>
+                            </div>
+                        </div>
+                        <div class="icon-card style-five">
+                            <div class="icon">
+                                <i class="icon-envelope"></i>
+                            </div>
+                            <div class="content">
+                                <h5 class="title">Have Any Question?</h5>
+                                <p class="desc">support@website.com <br>sales@website.com</p>
+                            </div>
+                        </div>
+                        <div class="icon-card style-five mb-0">
+                            <div class="icon">
+                                <i class="icon-location-dot-5"></i>
+                            </div>
+                            <div class="content">
+                                <h5 class="title">Visit Anytime</h5>
+                                <p class="desc">Evergreen 27San New York, RA85600 <br> New Avenue Road 51.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--  -->
+
+    <!-- Contact-form style-two contact-page start -->
+    <div class="contact-form-area">
+        <div class="sketch" style=" background-image: url({% static 'images/sketch-color.png' %})"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="section-title">
+                        <h2 class="title text-start">
+                            <span class="under-line style-two"> Contact us.</span> It’s <br> Easy
+                        </h2>
+                        <p class="text-start">Lorem ipsum dolor sit amet, consectetur adipiscing erat posuere nec mauris faucibus urna sagittis. Lorem ipsum dolor sit
+                        amet consectetur adipiscing elit erat posuere nec mauris faucibus urna sagittis.</p>
+                        {% comment %} <div class="mt-48">
+                            <a href="{% url 'faq' %}" class="theme-btn style-three"> <span> Visit FAQ </span></a>
+                        </div> {% endcomment %}
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="comment-respond style-two mt-48 mt-lg-0">
+                            <form action="" id="con" class="comment-form" method="POST">
+                            {% csrf_token %}
+                            <div class="row gx-3">
+                                <input type="hidden" name="contact" value="contact">
+                                <div class="col-md-6">
+                                    
+                                    <div class="single-input-field">
+                                        <label>Full Name</label>
+                                    
+                                        {% comment %} <input name="name" id="name" type="text" placeholder="Your Name" required> {% endcomment %}
+                                        {{form.full_name}}
+
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="single-input-field">
+                                        <label>Email</label>
+                                        {{form.email}}
+
+                                        {% comment %} <input name="email" id="email" type="email" placeholder="Email address" required> {% endcomment %}
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="single-input-field">
+                                        <label>Phone Number</label>
+                                        {% comment %} <input name="number" type="number" placeholder="Phone number" required> {% endcomment %}
+                                        {{form.phone_number}}
+
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="single-input-field style-two">
+                                        <label >Service</label>
+                                        {% comment %} <select name="services" >
+                                            <option selected>Select service</option>
+                                            <option value="1">One</option>
+                                            <option value="2">Two</option>
+                                            <option value="3">Three</option>
+                                        </select> {% endcomment %}
+                                        {{form.services}} 
+
+                                    </div> 
+                                </div>
+                                 <div class="col-12">
+                                    <div class="single-input-field style-two">
+                                        <label>Message</label>
+                                        {{form.message}} 
+
+                                        {% comment %} <textarea class="style-two" name="message" id="message" placeholder="Message" rows="4" cols="50" required></textarea> {% endcomment %}
+                                    </div>
+                                </div> 
+                                <div class="col-12">
+                                    <button class="theme-btn" type="submit">Send Message</button>
+                                </div>
+                            </div>
+                        </form>
+                        {% if messages %}
+                        <ul class="messages">
+                            {% for message in messages %}
+                           <script>
+                            swal("Successfully Submitted!", "Thank You, Our Team Will Contact you Soon!", "success");
+                    
+                           </script>
+                            {% endfor %}
+                        </ul>
+                        {% endif %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Contact-form style-two contact-page end -->
+    <!-- Add jQuery library if not already included -->
+{% comment %} <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<!-- Include jQuery Validation plugin -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.3/jquery.validate.min.js"></script> {% endcomment %}
+   {% comment %} <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script> 
+   <script>
+        // Attach event listener to the form submission
+        var form = document.getElementById("con");
+        form.addEventListener("submit", function (event) {
+            event.preventDefault(); // Prevent the form from submitting normally
+    
+            // Simulate form submission success (replace with your actual form submission logic)
+            setTimeout(function () {
+                // Display SweetAlert thank you popup
+                Swal.fire({
+                    title: 'Thank You!',
+                    text: 'Your message has been sent successfully.',
+                    icon: 'success',
+                    showCancelButton: false,
+                    confirmButtonColor: '#3085d6',
+                    confirmButtonText: 'OK'
+                }).then((result) => {
+                    if (result.isConfirmed) {
+                        form.submit(); // Submit the form if the user clicks OK in SweetAlert
+                    }
+                });
+            },); // Display the SweetAlert popup after 1 second
+        });
+    </script> 
+
+
+     <!-- Include jQuery library -->
+<!-- Include jQuery library -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<!-- Include jQuery Validation plugin -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.3/jquery.validate.min.js"></script>
+
+<script>
+    $(document).ready(function () {
+        // Initialize form validation on the #con form
+        $("#con").validate({
+            rules: {
+                name: "required",
+                email: {
+                    required: true,
+                    email: true
+                },
+                // Add similar rules for other fields
+            },
+            messages: {
+                name: "Please enter your name",
+                email: {
+                    required: "Please enter your email address",
+                    email: "Please enter a valid email address"
+                },
+                // Add similar messages for other fields
+            },
+            submitHandler: function (form) {
+                // Form is valid; you can submit it here if needed
+            }
+        });
+    });
+</script> {% endcomment %}
+
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@9.15.3/dist/sweetalert2.all.min.js"></script>
+
+<script>
+    var isLoading = false;
+    $(document).on("submit", "form.ajax", function (e) {
+        e.preventDefault();
+        var $this = $(this),
+            data = new FormData(this),
+            action_url = $this.attr("action"),
+            reset = $this.hasClass("reset"),
+            reload = $this.hasClass("reload"),
+            redirect = $this.hasClass("redirect"),
+            redirect_url = $this.attr("data-redirect");
+
+        if (!isLoading) {
+            isLoading = true;
+            $.ajax({
+                url: action_url,
+                type: "POST",
+                data: data,
+                cache: false,
+                contentType: false,
+                processData: false,
+                dataType: "json",
+                success: function (data) {
+                    var status = data.status;
+                    var title = data.title;
+                    var message = data.message;
+                    var pk = data.pk;
+                    if (status == "true") {
+                        title ? (title = title) : (title = "Success");
+                        Swal.fire({
+                            title: title,
+                            html: message,
+                            icon: "success",
+                        }).then(function () {
+                            redirect && (window.location.href = redirect_url), reload && window.location.reload(), reset && window.location.reset();
+                        });
+                    } else {
+                        title ? (title = title) : (title = "An Error Occurred");
+                        Swal.fire({
+                            title: title,
+                            html: message,
+                            icon: "error",
+                        });
+                    }
+                },
+                error: function (data) {
+                    var title = "An error occurred",
+                        message = "something went wrong";
+                    Swal.fire({
+                        title: title,
+                        html: message,
+                        icon: "error",
+                    });
+                },
+            }).then(function (response) {
+                isLoading = false;
+            });
+        }
+    });
+
+    $(document).on("click", ".action-button", function (e) {
+        e.preventDefault();
+        $this = $(this);
+        var html = $this.attr("data-text");
+        var icon = "question";
+        var id = $this.attr("data-id");
+        var url = $this.attr("href");
+        var title = $this.attr("data-title");
+        if (!title) {
+            title = "Are you sure?";
+        }
+
+        Swal.fire({
+            title: title,
+            html: html,
+            icon: icon,
+            showCancelButton: true,
+        }).then((result) => {
+            if (result.value) {
+                window.setTimeout(function () {
+                    $.ajax({
+                        type: "GET",
+                        url: url,
+                        dataType: "json",
+                        data: { pk: id },
+
+                        success: function (data) {
+                            var message = data.message;
+                            var status = data.status;
+                            var reload = data.reload;
+                            var redirect = data.redirect;
+                            var redirect_url = data.redirect_url;
+                            var title = data.title;
+
+                            if (status == "true") {
+                                title?title=title:title="Success";
+                                Swal.fire({title:title,html:message,icon:"success"}).then(function(){"true"==redirect&&(window.location.href=redirect_url),"true"==reload&&window.location.reload()});
+                            } else {
+                                title?title=title:title="An Error Occurred";
+                                Swal.fire({ title: title, html: message, icon: "error" });
+                            }
+                        },
+                        error: function (data) {
+                            var title = "An error occurred";
+                            var message = "An error occurred. Please try again later.";
+                            Swal.fire({ title: title, html: message, icon: "error" });
+                        },
+                    });
+                }, 100);
+            } else {
+                console.log("action cancelled");
+            }
+        });
+    });
+
+    // Instant Action Button
+    $(document).on("click", ".instant-action-button", function (e) {
+        e.preventDefault();
+        $this = $(this);
+        var text = $this.attr("data-text");
+        var icon = "success";
+        var key = $this.attr("data-key");
+        var url = $this.attr("data-url");
+        var reload = $this.hasClass("reload");
+        var reset = $this.hasClass("reset");
+        var redirect = $this.hasClass("redirect");
+        var title = $this.attr("data-title");
+        var redirect_url = $this.attr("data-redirect");
+
+        $.ajax({
+            type: "GET",
+            url: url,
+            dataType: "json",
+            data: { pk: key },
+
+            success: function (data) {
+                var status = data.status;
+                var message = data.message;
+
+                if (status == "true") {
+                    title ? (title = title) : (title = "Success");
+
+                    Swal.fire({ title: title, html: message, icon: "success" }).then(function () {
+                        redirect && (window.location.href = redirect_url), reload && window.location.reload(), reset && window.location.reset();
+                    });
+                } else {
+                    title ? (title = title) : (title = "An Error Occurred");
+                    Swal.fire({ title: title, html: message, icon: "error" });
+                }
+            },
+            error: function (data) {
+                var title = "An error occurred";
+                var message = "An error occurred. Please try again later.";
+                Swal.fire({ title: title, html: message, icon: "error" });
+            },
+        });
+    });
+
+    // Export Button
+    $(document).on("click", ".export-button", function (e) {
+        // random data
+        var request = new XMLHttpRequest();
+        request.open("POST", url, true);
+        request.setRequestHeader("Content-Type", "application/x-www-form-urlencoded; charset=UTF-8");
+        request.responseType = "blob";
+
+        request.onload = function (e) {
+            if (this.status === 200) {
+                let filename = "";
+                let disposition = request.getResponseHeader("Content-Disposition");
+                // check if filename is given
+                if (disposition && disposition.indexOf("attachment") !== -1) {
+                    let filenameRegex = /filename[^;=\n]*=((['"]).*?\2|[^;\n]*)/;
+                    let matches = filenameRegex.exec(disposition);
+                    if (matches != null && matches[1]) filename = matches[1].replace(/['"]/g, "");
+                }
+                let blob = this.response;
+                if (window.navigator.msSaveOrOpenBlob) {
+                    window.navigator.msSaveBlob(blob, filename);
+                } else {
+                    let downloadLink = window.document.createElement("a");
+                    let contentTypeHeader = request.getResponseHeader("Content-Type");
+                    downloadLink.href = window.URL.createObjectURL(
+                        new Blob([blob], {
+                            type: contentTypeHeader,
+                        })
+                    );
+                    downloadLink.download = filename;
+                    document.body.appendChild(downloadLink);
+                    downloadLink.click();
+                    document.body.removeChild(downloadLink);
+                }
+            } else {
+                alert("Download failed.");
+            }
+        };
+        request.send(data);
+    });
+</script>
+
+{% endblock  %}

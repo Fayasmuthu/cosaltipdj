@@ -1,0 +1,830 @@
+{% extends 'partials/baseall.html' %}
+{% load static %}
+{% block contentall %}
+  <!-- Menu Sidebar Section Start -->
+  <div class="menu-sidebar-area ">
+    <div class="menu-sidebar-wrapper">
+      <div class="menu-sidebar-close">
+        <button class="menu-sidebar-close-btn" id="menu_sidebar_close_btn">
+          <i class="fal fa-times"></i>
+        </button>
+      </div>
+      <div class="menu-sidebar-content">
+        <div class="menu-sidebar-logo">
+          <a href="{% url 'index2' %}" class="standard-logo">
+            <img src="{% static 'images/logo/footer_logo.png' %}" alt="logo" />
+          </a>
+        </div>
+        <div class="mobile-nav-menu fix"></div>
+      </div>
+    </div>
+  </div>
+  <!-- Menu Sidebar Section End -->
+
+  <!-- Menu Sidebar Overlay -->
+  <div class="body-overlay"></div>
+
+  {% comment %} <!-- Page Header Area Start !-->
+  <div class="page-header-area style-1">
+    <div class="custom-container">
+      <div class=" page-breadcrumb-sec" style="background-image: url({% static 'images/breadcrumb/about.jpg' %})">
+        <div class="breadcrumb-shape"></div>
+        <div class="page-overlay"></div>
+        <div class="row">
+          <div class="col-md-12">
+            <div class="breadcrumb-wrapper">
+              <div class="breadcrumb-list">
+                <ul>
+                  <li><a href="{% url 'index2' %}">Home</a></li>
+                  <li class="active">
+                    <a href="#">Services</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="page-heading">
+                <h1>We create evergreen <br/> business strategy</h1>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Page Header Area End !--> {% endcomment %}
+
+  <!-- Service Area Start -->
+  <div class="service-area style-3">
+    <div class="sketch" style="background: url({% static 'images/sketch-color.png' %})"></div>
+    <div class="shape-one" style=" background: url({% static 'images/shape/Rectangle.png' %})"></div>
+    <div class="shape-two" style="background: url({% static 'images/shape/shape-2.png' %})"></div>
+    <div class="container mt-5">
+      <div class="row justify-content-center">
+        <div class="col-lg-6">
+          <div class="section-title">
+            <h2 class="title text-start text-center"><span class="under-line style-two">What we do</span></h2>
+            <p
+              class="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit arcu eleifend quis elementum elementum massa facilisi</p>
+          </div>
+        </div>
+      </div>
+      <div class="row mt-36">
+        {% for i in box %}
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="icon-card">
+            <div class="icon">
+              <span class="icon-color"></span>
+              <i class="{{i.spanclassname}}"></i>
+            </div>
+            <div class="content">
+              <h5 class="title">{{i.name}}</h5>
+              <p class="desc">{{i.title}}</p>
+            </div>
+          </div>
+        </div>
+        {% endfor %}
+
+        {% comment %}
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="icon-card">
+            <div class="icon">
+              <span class="icon-color"></span>
+              <i class="icon-commitment"></i>
+            </div>
+            <div class="content">
+              <h5 class="title">Quality Assurance</h5>
+              <p class="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit nibh egestas
+                                        ullamcorper ipsum nibh quis.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="icon-card">
+            <div class="icon">
+              <span class="icon-color"></span>
+              <i class="icon-human-resources"></i>
+            </div>
+            <div class="content">
+              <h5 class="title">Human Resources</h5>
+              <p
+                class="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit nibh egestas ullamcorper ipsum nibh quis.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="icon-card">
+            <div class="icon">
+              <span class="icon-color"></span>
+              <i class="icon-operation"></i>
+            </div>
+            <div class="content">
+              <h5 class="title">Operation & Delegation</h5>
+              <p
+                class="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit nibh egestas ullamcorper ipsum nibh quis.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="icon-card">
+            <div class="icon">
+              <span class="icon-color"></span>
+              <i class="icon-business-analysis"></i>
+            </div>
+            <div class="content">
+              <h5 class="title">Business Analysis</h5>
+              <p
+                class="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit nibh egestas ullamcorper ipsum nibh quis.</p>
+            </div>
+          </div>
+        </div> {% endcomment %}
+      </div>
+    </div>
+  </div>
+  <!-- Service Area End -->
+
+  <!-- Why Choose Us Start -->
+  <div class="why-choose-us-area style-3">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-12">
+          <div class="section-title style-two">
+            <h2 class="title text-center text-lg-start">Our consaltip <br> <span class="under-line style-two">
+                exclusive services </span></h2>
+            <p class="desc text-center text-lg-start">Lorem ipsum dolor sit amet, consectetur adipiscing elit arcu eleifend quis elementum elementum massa facilisi cras
+                  ullamcorper cursus praesent.</p>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="image-card-wrapper">
+            <div class="image-card">
+              <div class="content">
+                <div class="title-wrapper">
+                  <h2 class="title">Brand & business strategy</h2>
+                  <p class="desc">Lorem ipsum dolor sit amet consectetur. Nulla volutpat et tristique vitae. Est elementum dignissim elit egestas massa.
+                    Condimentum tincidunt varius quis viverra in enim fermentum.</p>
+                </div>
+                <div class="list-item-wrapper">
+                  <div class="list-item">
+                    <div class="icon">
+                      <i class="icon-check"></i>
+                    </div>
+                    <p class="text">Research & Insights</p>
+                  </div>
+                  <div class="list-item">
+                    <div class="icon">
+                      <i class="icon-check"></i>
+                    </div>
+                    <p class="text">Purpose & Vision</p>
+                  </div>
+                  <div class="list-item">
+                    <div class="icon">
+                      <i class="icon-check"></i>
+                    </div>
+                    <p class="text">Audience Personas</p>
+                  </div>
+                </div>
+                <div>
+                  <a href="{% url 'service_details' %}" class="theme-btn image-card-btn"><span>Read More</span></a>
+                </div>
+              </div>
+              <div class="image">
+                <div class="image-inner">
+                  <img src="{% static 'images/common/home-process.jpg' %}" alt="choose-us" />
+                </div>
+              </div>
+            </div>
+            <div class="image-card">
+              <div class="content">
+                <div class="title-wrapper">
+                  <h2 class="title">Verbal identity systems</h2>
+                  <p class="desc">Lorem ipsum dolor sit amet consectetur. Nulla volutpat et tristique vitae. Est elementum dignissim elit egestas massa.
+                    Condimentum tincidunt varius quis viverra in enim fermentum.</p>
+                </div>
+                <div class="list-item-wrapper">
+                  <div class="list-item">
+                    <div class="icon">
+                      <i class="icon-check"></i>
+                    </div>
+                    <p class="text">Brand Personality</p>
+                  </div>
+                  <div class="list-item">
+                    <div class="icon">
+                      <i class="icon-check"></i>
+                    </div>
+                    <p class="text">Brand Story & Manifesto</p>
+                  </div>
+                  <div class="list-item">
+                    <div class="icon">
+                      <i class="icon-check"></i>
+                    </div>
+                    <p class="text">Tagline Development</p>
+                  </div>
+                </div>
+                <div>
+                  <a href="{% url 'service_details' %}" class="theme-btn image-card-btn"><span>Read More</span></a>
+                </div>
+              </div>
+              <div class="image">
+                <div class="image-inner">
+                  <img src="{% static 'images/common/case-card-1.jpg' %}" alt="choose-us" />
+                </div>
+              </div>
+            </div>
+            <div class="image-card">
+              <div class="content">
+                <div class="title-wrapper">
+                  <h2 class="title">Visual identity systems</h2>
+                  <p class="desc">Lorem ipsum dolor sit amet consectetur. Nulla volutpat et tristique vitae. Est elementum dignissim elit egestas massa.
+                    Condimentum tincidunt varius quis viverra in enim fermentum.</p>
+                </div>
+                <div class="list-item-wrapper">
+                  <div class="list-item">
+                    <div class="icon">
+                      <i class="icon-check"></i>
+                    </div>
+                    <p class="text">Brand Look & Feel</p>
+                  </div>
+                  <div class="list-item">
+                    <div class="icon">
+                      <i class="icon-check"></i>
+                    </div>
+                    <p class="text">Brand Guidelines</p>
+                  </div>
+                  <div class="list-item">
+                    <div class="icon">
+                      <i class="icon-check"></i>
+                    </div>
+                    <p class="text">Art Direction</p>
+                  </div>
+                </div>
+                <div>
+                  <a href="{% url 'service_details' %}" class="theme-btn image-card-btn"><span>Read More</span></a>
+                </div>
+              </div>
+              <div class="image">
+                <div class="image-inner">
+                  <img src="{% static 'images/common/image-card-3.jpg' %}" alt="choose-us" />
+                </div>
+              </div>
+            </div>
+            <div class="image-card">
+              <div class="content">
+                <div class="title-wrapper">
+                  <h2 class="title">Best Marketing Services</h2>
+                  <p class="desc">Lorem ipsum dolor sit amet consectetur. Nulla volutpat et tristique vitae. Est elementum dignissim elit egestas massa.
+                    Condimentum tincidunt varius quis viverra in enim fermentum.</p>
+                </div>
+                <div class="list-item-wrapper">
+                  <div class="list-item">
+                    <div class="icon">
+                      <i class="icon-check"></i>
+                    </div>
+                    <p class="text">Automated reports</p>
+                  </div>
+                  <div class="list-item">
+                    <div class="icon">
+                      <i class="icon-check"></i>
+                    </div>
+                    <p class="text">Realtime analytics</p>
+                  </div>
+                  <div class="list-item">
+                    <div class="icon">
+                      <i class="icon-check"></i>
+                    </div>
+                    <p class="text">Funnel optimization</p>
+                  </div>
+                </div>
+                <div>
+                  <a href="{% url 'service_details' %}" class="theme-btn image-card-btn"><span>Read More</span></a>
+                </div>
+              </div>
+              <div class="image">
+                <div class="image-inner">
+                  <img src="{% static 'images/common/image-card-4.jpg' %}" alt="choose-us" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Why Choose Us End -->
+
+  <!-- Pricing Area Start -->
+  {% comment %} <div class="pricing-area style-2">
+    <div class="sketch" style="background: url({% static 'images/sketch-color.png' %})"></div>
+    <div class="container"> {% endcomment %}
+      {% comment %} <div class="row"> {% endcomment %}
+        {% comment %} <div class="col-lg-12">
+          <div class="section-title">
+            <h2 class="title text-center">Our Best <span class="under-line style-two"> Pricing Plan </span> </h2>
+          </div> 
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        {% comment %} <div class="col-lg-12">
+          <nav class="price-card-switch">
+            <ul class="nav-tab" id="nav-tab" role="tablist">
+              <li class="active" id="nav-tab1" data-bs-toggle="tab" data-bs-target="#nav-tab1_item" role="tab"
+                aria-controls="nav-tab1_item" aria-selected="true">Billed Monthly</li>
+              <li class="" id="nav-tab2" data-bs-toggle="tab" data-bs-target="#nav-tab2_item" role="tab"
+                aria-controls="nav-tab2_item" aria-selected="false">Billed Annually</li>
+            </ul>
+          </nav>
+        </div>
+        <div class="tab-content tab-content-wrapper" id="nav-tabContent"> {% endcomment %}
+          {% comment %} <div class="tab-pane fade show active" id="nav-tab1_item" role="tabpanel" aria-labelledby="nav-tab1"
+            tabindex="0">
+            <div class="row">
+              <div class="col-12 col-md-6 col-lg-4">
+                <div class="price-card-wrapper">
+                  <div class="price-header">
+                    <p>Most Popular</p>
+                  </div>
+                  <div class="price-card">
+                    <div class="card-title">
+                      <p class="sub-title">Basic</p>
+                    </div>
+                    <div class="price">
+                      <h3 class="price-heading">
+                        $199<span class="duration">/mo</span>
+                      </h3>
+                    </div>
+                    <div class="list-wrapper">
+                      <div class="divider"></div>
+                      <p class="list-title">What’s included?</p>
+                      <div class="list-inner">
+                        <div class="price-list-item">
+                          <span class="icon">
+                            <i class="icon-check"></i>
+                          </span>
+                          <p class="text">Nostrud exercitation ullamco</p>
+                        </div>
+                        <div class="price-list-item">
+                          <span class="icon">
+                            <i class="icon-check"></i>
+                          </span>
+                          <p class="text">24 hours response time</p>
+                        </div>
+                        <div class="price-list-item">
+                          <span class="icon">
+                            <i class="icon-check"></i>
+                          </span>
+                          <p class="text">Phone or email consultation</p>
+                        </div>
+                        <div class="price-list-item">
+                          <span class="icon">
+                            <i class="icon-check"></i>
+                          </span>
+                          <p class="text">100% Money-back guarantee</p>
+                        </div>
+                      </div>
+                      <div class="price-btn">
+                        <a href="#">Get Started</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-6 col-lg-4">
+                <div class="price-card-wrapper active switch-price-card">
+                  <div class="price-header">
+                    <p>Most Popular</p>
+                  </div>
+                  <div class="price-card">
+                    <div class="card-title">
+                      <p class="sub-title">Startup</p>
+                    </div>
+                    <div class="price">
+                      <h3 class="price-heading">
+                        $299<span class="duration">/mo</span>
+                      </h3>
+                    </div>
+                    <div class="list-wrapper">
+                      <div class="divider"></div>
+                      <p class="list-title">What’s included?</p>
+                      <div class="list-inner">
+                        <div class="price-list-item">
+                          <span class="icon">
+                            <i class="icon-check"></i>
+                          </span>
+                          <p class="text">Nostrud exercitation ullamco</p>
+                        </div>
+                        <div class="price-list-item">
+                          <span class="icon">
+                            <i class="icon-check"></i>
+                          </span>
+                          <p class="text">24 hours response time</p>
+                        </div>
+                        <div class="price-list-item">
+                          <span class="icon">
+                            <i class="icon-check"></i>
+                          </span>
+                          <p class="text">Phone or email consultation</p>
+                        </div>
+                        <div class="price-list-item">
+                          <span class="icon">
+                            <i class="icon-check"></i>
+                          </span>
+                          <p class="text">100% Money-back guarantee</p>
+                        </div>
+                      </div>
+                      <div class="price-btn">
+                        <a href="#">Get Started</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-6 col-lg-4">
+                <div class="price-card-wrapper">
+                  <div class="price-header">
+                    <p>Most Popular</p>
+                  </div>
+                  <div class="price-card">
+                    <div class="card-title">
+                      <p class="sub-title">Enterprise</p>
+                    </div>
+                    <div class="price">
+                      <h3 class="price-heading">
+                        $499<span class="duration">/mo</span>
+                      </h3>
+                    </div>
+                    <div class="list-wrapper">
+                      <div class="divider"></div>
+                      <p class="list-title">What’s included?</p>
+                      <div class="list-inner">
+                        <div class="price-list-item">
+                          <span class="icon">
+                            <i class="icon-check"></i>
+                          </span>
+                          <p class="text">Nostrud exercitation ullamco</p>
+                        </div>
+                        <div class="price-list-item">
+                          <span class="icon">
+                            <i class="icon-check"></i>
+                          </span>
+                          <p class="text">24 hours response time</p>
+                        </div>
+                        <div class="price-list-item">
+                          <span class="icon">
+                            <i class="icon-check"></i>
+                          </span>
+                          <p class="text">Phone or email consultation</p>
+                        </div>
+                        <div class="price-list-item">
+                          <span class="icon">
+                            <i class="icon-check"></i>
+                          </span>
+                          <p class="text">100% Money-back guarantee</p>
+                        </div>
+                      </div>
+                      <div class="price-btn">
+                        <a href="#">Get Started</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div> {% endcomment %}
+          {% comment %} <div class="tab-pane fade" id="nav-tab2_item" role="tabpanel" aria-labelledby="nav-tab2" tabindex="0">
+            <div class="row">
+              <div class="col-12 col-md-6 col-lg-4">
+                <div class="price-card-wrapper">
+                  <div class="price-header">
+                    <p>Most Popular</p>
+                  </div>
+                  <div class="price-card">
+                    <div class="card-title">
+                      <p class="sub-title">Basic</p>
+                    </div>
+                    <div class="price">
+                      <h3 class="price-heading">
+                        $220<span class="duration">/mo</span>
+                      </h3>
+                    </div>
+                    <div class="list-wrapper">
+                      <div class="divider"></div>
+                      <p class="list-title">What’s included?</p>
+                      <div class="list-inner">
+                        <div class="price-list-item">
+                          <span class="icon">
+                            <i class="icon-check"></i>
+                          </span>
+                          <p class="text">Nostrud exercitation ullamco</p>
+                        </div>
+                        <div class="price-list-item">
+                          <span class="icon">
+                            <i class="icon-check"></i>
+                          </span>
+                          <p class="text">24 hours response time</p>
+                        </div>
+                        <div class="price-list-item">
+                          <span class="icon">
+                            <i class="icon-check"></i>
+                          </span>
+                          <p class="text">Phone or email consultation</p>
+                        </div>
+                        <div class="price-list-item">
+                          <span class="icon">
+                            <i class="icon-check"></i>
+                          </span>
+                          <p class="text">100% Money-back guarantee</p>
+                        </div>
+                      </div>
+                      <div class="price-btn">
+                        <a href="#">Get Started</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-6 col-lg-4">
+                <div class="price-card-wrapper active switch-price-card">
+                  <div class="price-header">
+                    <p>Most Popular</p>
+                  </div>
+                  <div class="price-card">
+                    <div class="card-title">
+                      <p class="sub-title">Startup</p>
+                    </div>
+                    <div class="price">
+                      <h3 class="price-heading">
+                        $390<span class="duration">/mo</span>
+                      </h3>
+                    </div>
+                    <div class="list-wrapper">
+                      <div class="divider"></div>
+                      <p class="list-title">What’s included?</p>
+                      <div class="list-inner">
+                        <div class="price-list-item">
+                          <span class="icon">
+                            <i class="icon-check"></i>
+                          </span>
+                          <p class="text">Nostrud exercitation ullamco</p>
+                        </div>
+                        <div class="price-list-item">
+                          <span class="icon">
+                            <i class="icon-check"></i>
+                          </span>
+                          <p class="text">24 hours response time</p>
+                        </div>
+                        <div class="price-list-item">
+                          <span class="icon">
+                            <i class="icon-check"></i>
+                          </span>
+                          <p class="text">Phone or email consultation</p>
+                        </div>
+                        <div class="price-list-item">
+                          <span class="icon">
+                            <i class="icon-check"></i>
+                          </span>
+                          <p class="text">100% Money-back guarantee</p>
+                        </div>
+                      </div>
+                      <div class="price-btn">
+                        <a href="#">Get Started</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-6 col-lg-4">
+                <div class="price-card-wrapper">
+                  <div class="price-header">
+                    <p>Most Popular</p>
+                  </div>
+                  <div class="price-card">
+                    <div class="card-title">
+                      <p class="sub-title">Enterprise</p>
+                    </div>
+                    <div class="price">
+                      <h3 class="price-heading">
+                        $160<span class="duration">/mo</span>
+                      </h3>
+                    </div>
+                    <div class="list-wrapper">
+                      <div class="divider"></div>
+                      <p class="list-title">What’s included?</p>
+                      <div class="list-inner">
+                        <div class="price-list-item">
+                          <span class="icon">
+                            <i class="icon-check"></i>
+                          </span>
+                          <p class="text">Nostrud exercitation ullamco</p>
+                        </div>
+                        <div class="price-list-item">
+                          <span class="icon">
+                            <i class="icon-check"></i>
+                          </span>
+                          <p class="text">24 hours response time</p>
+                        </div>
+                        <div class="price-list-item">
+                          <span class="icon">
+                            <i class="icon-check"></i>
+                          </span>
+                          <p class="text">Phone or email consultation</p>
+                        </div>
+                        <div class="price-list-item">
+                          <span class="icon">
+                            <i class="icon-check"></i>
+                          </span>
+                          <p class="text">100% Money-back guarantee</p>
+                        </div>
+                      </div>
+                      <div class="price-btn">
+                        <a href="#">Get Started</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div> {% endcomment %}
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Pricing Area End -->
+
+  <!-- FAQ Area Start -->
+  <div class="faq-area style-1 style-2">
+    <div class="shape-one" style=" background: url({% static 'images/shape/Rectangle.png' %})" ></div>
+    <div class="shape-two" style="background: url({% static 'images/shape/shape-2.png' %})"></div>
+    <div class="sketch" style="background: url({% static 'images/sketch-color.png' %})"></div>
+    <div class="container">
+      <div class="row justify-content-between">
+        <div class="col-lg-12">
+          {% comment %} <div class="section-title style-three align-items-center align-items-lg-start">
+            <h2 class="title">Frequently Ask Question</h2>
+            <div class="theme-btn-wrapper">
+              <a href="contact.html" class="theme-btn">
+                Get in Touch
+              </a>
+            </div>
+          </div> {% endcomment %}
+        </div>
+      </div>
+      <div class="row">
+        {% comment %} <div class="col-lg-7">
+          <div class="accordion-wrapper" id="faq1">
+            <!-- Single Accordion Start -->
+            <div class="accordion-list-item">
+              <div id="headingOne">
+                <div class="accordion-head" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true"
+                  aria-controls="collapseOne">
+                  <h3 class="accordion-title">1. Do you have examples of past case results?</h3>
+                </div>
+              </div>
+              <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                data-bs-parent="#faq1">
+                <div class="accordion-item-body">
+                  <p>Lorem ipsum dolor sit amet consectetur. Netus cursus purus faucibus blandit project discussion elit faucibus potenti cum tempus non. Tortor id morbi velit mollis aliquet.</p>
+                </div>
+              </div>
+            </div>
+            <!-- Single Accordion End -->
+            <!-- Single Accordion Start -->
+            <div class="accordion-list-item">
+              <div id="headingTwo">
+                <div class="accordion-head collapsed" data-bs-toggle="collapse" data-bs-target="#collapseTwo"
+                  aria-expanded="false" aria-controls="collapseTwo">
+                  <h3 class="accordion-title">2. How can I become a partner?</h3>
+                </div>
+              </div>
+              <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                data-bs-parent="#faq1">
+                <div class="accordion-item-body">
+                  <p>Porem ipsum dolor sit amet consectetur. Netus cursus purus faucibus blandit project discussion elit faucibus potenti cum tempus non. Tortor id morbi velit mollis Uliquet.</p>
+                </div>
+              </div>
+            </div>
+            <!-- Single Accordion End -->
+            <!-- Single Accordion Start -->
+            <div class="accordion-list-item">
+              <div id="headingThree">
+                <div class="accordion-head collapsed" data-bs-toggle="collapse" data-bs-target="#collapseThree"
+                  aria-expanded="false" aria-controls="collapseThree">
+                  <h3 class="accordion-title">3. How can i get involved?</h3>
+                </div>
+              </div>
+              <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                data-bs-parent="#faq1">
+                <div class="accordion-item-body">
+                  <p>Qorem ipsum dolor sit amet consectetur. Netus cursus purus faucibus blandit project discussion elit faucibus potenti cum tempus non. Tortor id morbi velit mollis Pliquet.</p>
+                </div>
+              </div>
+            </div>
+            <!-- Single Accordion End -->
+            <!-- Single Accordion Start -->
+            <div class="accordion-list-item">
+              <div id="headingFour">
+                <div class="accordion-head collapsed" data-bs-toggle="collapse" data-bs-target="#collapseFour"
+                  aria-expanded="false" aria-controls="collapseFour">
+                  <h3 class="accordion-title">4. How much will it cost?</h3>
+                </div>
+              </div>
+              <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                data-bs-parent="#faq1">
+                <div class="accordion-item-body">
+                  <p>Rorem ipsum dolor sit amet consectetur. Netus cursus purus faucibus blandit project discussion elit faucibus potenti cum tempus non. Tortor id morbi velit mollis tliquet.</p>
+                </div>
+              </div>
+            </div>
+            <!-- Single Accordion End -->
+            <!-- Single Accordion Start -->
+            <div class="accordion-list-item">
+              <div id="headingFive">
+                <div class="accordion-head collapsed" data-bs-toggle="collapse" data-bs-target="#collapseFive"
+                  aria-expanded="false" aria-controls="collapseFive">
+                  <h3 class="accordion-title">5. Who can i contact for further information?</h3>
+                </div>
+              </div>
+              <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
+                data-bs-parent="#faq1">
+                <div class="accordion-item-body">
+                  <p>Borem ipsum dolor sit amet consectetur. Netus cursus purus faucibus blandit project discussion elit faucibus potenti cum tempus non. Tortor id morbi velit mollis yliquet.</p>
+                </div>
+              </div>
+            </div>
+            <!-- Single Accordion End -->
+          </div>
+        </div> {% endcomment %}
+        <div class="col-lg-6 mx-auto">
+          <div class="post-comments-form">
+            <div class="comment-respond">
+              <div class="post-comments-title">
+                <p class="sub-title">Get more updates</p>
+                <h5>Send Us a Message</h5>
+              </div>
+              <form action="{% url 'service' %}" class="comment-form" method="POST">
+                {% csrf_token %}
+{% comment %}                
+                <div class="row gx-2">
+                  <div class="col-lg-12">
+                    <div class="single-input-field">
+                      <input name="name" type="text" placeholder="Your Name">
+                    </div>
+                  </div>
+                  <div class="col-lg-12">
+                    <div class="single-input-field">
+                      <input name="email" type="email" placeholder="Email address">
+                    </div>
+                  </div>
+                  <div class="col-lg-6">
+                    <div class="single-input-field">
+                      <input name="number" type="number" placeholder="Phone number">
+                    </div>
+                  </div>
+                  <div class="col-lg-6">
+                    <div class="single-input-field">
+                      <select name="optionC">
+                        <option selected>Subject</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <div class="single-input-field">
+                      <textarea name="message" placeholder="Subject" rows="4" cols="50"></textarea>
+                    </div> 
+                  </div>
+                  <div class="col-12">
+                    <button class="theme-btn w-100 style-four" type="submit">Send Message </button>
+                  </div>
+                </div>
+              </form> {% endcomment %}
+            {% include 'details/form_fields.html' %}
+            {% comment %} {% if messages %}
+            <div class="alert alert-success">
+              <ul>
+                {% for message in messages %}
+                  <li>{{ message }}</li>
+                {% endfor %}
+              </ul>
+            </div>
+          {% endif %} {% endcomment %}
+          {% if messages %}
+          <ul class="messages">
+              {% for message in messages %}
+             <script>
+              swal("Successfully Submitted!", "Thank You, Our Team Will Contact you Soon!", "success");
+      
+             </script>
+              {% endfor %}
+          </ul>
+          {% endif %}
+          
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- FAQ Area End -->
+  {% endblock  %}
